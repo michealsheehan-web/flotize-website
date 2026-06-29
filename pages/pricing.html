@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — FloTize</title>
+  <meta name="description" content="Simple, transparent pricing for FloTize. Starter from $149/month. No hidden fees, cancel anytime." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      background: var(--dark);
+      padding: 5rem 0 4rem;
+      text-align: center;
+    }
+    .page-hero h1 { color: var(--white); margin-bottom: 1rem; }
+    .page-hero p { color: rgba(255,255,255,0.65); font-size: 1.1rem; max-width: 540px; margin: 0 auto; }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 3rem;
+      font-size: 0.875rem;
+    }
+    .compare-table th {
+      padding: 1rem 1.25rem;
+      text-align: left;
+      background: var(--grey-4);
+      color: var(--grey-1);
+      font-weight: 600;
+      border-bottom: 2px solid var(--grey-3);
+    }
+    .compare-table th:not(:first-child) { text-align: center; }
+    .compare-table td {
+      padding: 0.875rem 1.25rem;
+      border-bottom: 1px solid var(--grey-3);
+      color: var(--grey-1);
+    }
+    .compare-table td:not(:first-child) { text-align: center; }
+    .compare-table tr:hover td { background: var(--teal-mist); }
+    .compare-table .section-row td {
+      background: var(--grey-4);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--grey-2);
+      padding: 0.6rem 1.25rem;
+    }
+    .check { color: var(--teal); font-size: 1rem; font-weight: 700; }
+    .cross { color: var(--grey-3); font-size: 1rem; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--grey-3);
+      padding: 1.5rem 0;
+    }
+    .faq-item h4 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .faq-item p { font-size: 0.9rem; }
+
+    .consulting-card {
+      background: var(--dark);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    .consulting-card h3 { color: white; margin-bottom: 0.5rem; }
+    .consulting-card p { color: rgba(255,255,255,0.65); margin-bottom: 0; }
+
+    @media (max-width: 768px) {
+      .consulting-card { grid-template-columns: 1fr; }
+      .compare-table { font-size: 0.78rem; }
+      .compare-table th, .compare-table td { padding: 0.6rem 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <span>FloTize</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+      </div>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Pricing</span>
+    <h1>Simple, transparent pricing</h1>
+    <p>No hidden fees, no long-term contracts. Start with the plan that fits your business today and upgrade as you grow.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="pricing-grid reveal">
+
+      <div class="pricing-card">
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price">$149<span>/month</span></div>
+        <p class="pricing-desc">Everything you need to capture and manage client enquiries from day one.</p>
+        <ul class="pricing-features">
+          <li>3 users</li>
+          <li>Up to 1,000 active requests</li>
+          <li>Up to 100 clients</li>
+          <li>AI email ingestion</li>
+          <li>Workflow (table + kanban)</li>
+          <li>Client database</li>
+          <li>Basic analytics</li>
+          <li>SLA monitoring</li>
+          <li>Email support</li>
+          <li class="muted">Mass communications</li>
+          <li class="muted">Advanced analytics</li>
+          <li class="muted">AI draft responses</li>
+          <li class="muted">GDPR tools</li>
+        </ul>
+        <a href="demo.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Get started</a>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most popular</div>
+        <div class="pricing-tier">Professional</div>
+        <div class="pricing-price">$299<span>/month</span></div>
+        <p class="pricing-desc">For growing teams that need deeper client insights and communication tools.</p>
+        <ul class="pricing-features">
+          <li>10 users</li>
+          <li>Up to 5,000 active requests</li>
+          <li>Up to 500 clients</li>
+          <li>Everything in Starter</li>
+          <li>Mass communications</li>
+          <li>Client tiering + SLA overrides</li>
+          <li>Advanced analytics + AI insights</li>
+          <li>GDPR + data retention tools</li>
+          <li>Priority email support</li>
+          <li>Onboarding call included</li>
+          <li class="muted">AI draft responses</li>
+          <li class="muted">Custom branding</li>
+          <li class="muted">API access</li>
+        </ul>
+        <a href="demo.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get started</a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-tier">Business</div>
+        <div class="pricing-price">$599<span>/month</span></div>
+        <p class="pricing-desc">For established firms that want AI-powered responses and full platform access.</p>
+        <ul class="pricing-features">
+          <li>25 users</li>
+          <li>Unlimited active requests</li>
+          <li>Unlimited clients</li>
+          <li>Everything in Professional</li>
+          <li>AI draft responses (200/month)</li>
+          <li>Knowledge Base for AI context</li>
+          <li>Custom branding</li>
+          <li>API access</li>
+          <li>Dedicated account manager</li>
+          <li>Phone + video support</li>
+          <li>Quarterly business reviews</li>
+        </ul>
+        <a href="demo.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Get started</a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-tier">Enterprise</div>
+        <div class="pricing-price" style="font-size:1.8rem;">Custom<span style="font-size:0.875rem;"> pricing</span></div>
+        <p class="pricing-desc">For larger organisations with complex needs. From $1,200/month.</p>
+        <ul class="pricing-features">
+          <li>Unlimited users</li>
+          <li>Unlimited everything</li>
+          <li>Everything in Business</li>
+          <li>Multi-location support</li>
+          <li>White label options</li>
+          <li>Custom integrations</li>
+          <li>SLA guarantees</li>
+          <li>Private cloud / on-premise</li>
+          <li>Dedicated support team</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Contact us</a>
+      </div>
+
+    </div>
+
+    <div class="consulting-card reveal">
+      <div>
+        <h3>Need help getting set up?</h3>
+        <p>Our team can handle onboarding, data migration, workflow configuration, and staff training — so you're up and running in days, not weeks.</p>
+        <div style="display:flex;gap:2rem;margin-top:1.25rem;flex-wrap:wrap;">
+          <div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">$1,500</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Onboarding &amp; setup</div>
+          </div>
+          <div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">$400/session</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Staff training</div>
+          </div>
+          <div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">$300–600/mo</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Managed service</div>
+          </div>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-outline" style="white-space:nowrap;">Talk to us →</a>
+    </div>
+
+    <div class="reveal" style="margin-top:4rem;">
+      <h2 style="text-align:center;margin-bottom:0.5rem;">Full feature comparison</h2>
+      <p style="text-align:center;margin-bottom:0;">See exactly what's included in each plan.</p>
+      <div style="overflow-x:auto;margin-top:2rem;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="width:35%">Feature</th>
+              <th>Starter</th>
+              <th>Professional</th>
+              <th>Business</th>
+              <th>Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="section-row"><td colspan="5">Limits</td></tr>
+            <tr><td>Users</td><td>3</td><td>10</td><td>25</td><td>Unlimited</td></tr>
+            <tr><td>Active requests</td><td>1,000</td><td>5,000</td><td>Unlimited</td><td>Unlimited</td></tr>
+            <tr><td>Clients</td><td>100</td><td>500</td><td>Unlimited</td><td>Unlimited</td></tr>
+            <tr class="section-row"><td colspan="5">Core Features</td></tr>
+            <tr><td>AI email ingestion</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Workflow (table + kanban)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Client database</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Basic analytics</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>SLA monitoring</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Calendar + scheduling</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Invoice generation</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr class="section-row"><td colspan="5">Professional Features</td></tr>
+            <tr><td>Mass communications</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Client tiering + SLA overrides</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Advanced analytics + AI insights</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>GDPR + data retention tools</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr class="section-row"><td colspan="5">Business Features</td></tr>
+            <tr><td>AI draft responses</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td>200/month</td><td>1,000/month</td></tr>
+            <tr><td>Knowledge Base for AI context</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Custom branding</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>API access</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr class="section-row"><td colspan="5">Enterprise Features</td></tr>
+            <tr><td>Multi-location support</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>White label</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Private cloud / on-premise</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
+            <tr class="section-row"><td colspan="5">Support</td></tr>
+            <tr><td>Email support</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Priority support</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Onboarding call</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Dedicated account manager</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Phone + video support</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="reveal" style="max-width:720px;margin:4rem auto 0;">
+      <h2 style="text-align:center;margin-bottom:2rem;">Frequently asked questions</h2>
+      <div class="faq-item">
+        <h4>Is there a free trial?</h4>
+        <p>We don't offer a self-serve free trial, but we do offer a free 30-minute demo where we'll show you exactly how FloTize would work for your business. Book a demo and if it's a good fit, we'll get you set up straight away.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I change plans later?</h4>
+        <p>Yes — you can upgrade or downgrade at any time. Upgrades take effect immediately. Contact us at micheal.sheehan@flotize.com and we'll sort it within one business day.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is there a setup fee?</h4>
+        <p>No setup fee for self-managed onboarding. If you'd like our team to handle the setup, configure your workflows, and train your staff, that's available as a professional services engagement from $1,500.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What email providers do you support?</h4>
+        <p>FloTize currently integrates with Microsoft 365 and Outlook via Microsoft Graph API. Support for additional email providers is on our roadmap.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is my data secure?</h4>
+        <p>Yes. All data is stored in Microsoft Azure (North Europe region), encrypted at rest and in transit. We're GDPR-compliant and take data security seriously. Full details in our Privacy Policy.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I cancel at any time?</h4>
+        <p>Yes — no long-term contracts. Cancel anytime and you'll retain access until the end of your current billing period. Contact us at micheal.sheehan@flotize.com to cancel.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Not sure which plan is right for you?</h2>
+    <p>Book a free demo and we'll recommend the best fit for your team size and workflow.</p>
+    <a href="demo.html" class="btn btn-outline btn-lg">Book your free demo →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
+        <p>AI-powered workflow management for service businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="demo.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FloTize. All rights reserved.</span>
+      <span>micheal.sheehan@flotize.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

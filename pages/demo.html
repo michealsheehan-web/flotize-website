@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Demo — FloTize</title>
+  <meta name="description" content="Book a free 30-minute demo of FloTize and see how AI-powered workflow management can transform your service business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .demo-layout {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 5rem;
+      align-items: start;
+      padding: 5rem 0;
+    }
+    .demo-form-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--grey-3);
+    }
+    .demo-form-card h2 { margin-bottom: 0.4rem; }
+    .demo-form-card > p { margin-bottom: 2rem; font-size: 0.925rem; }
+    .what-to-expect li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .expect-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--teal-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .expect-text h4 { font-size: 0.925rem; margin-bottom: 0.2rem; }
+    .expect-text p { font-size: 0.85rem; }
+    @media (max-width: 900px) {
+      .demo-layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <span>FloTize</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+      </div>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div style="background:var(--dark);padding:3rem 0 0;">
+  <div class="container">
+    <span class="section-label">Free Demo</span>
+    <h1 style="color:white;max-width:580px;margin-top:0.5rem;">See FloTize working for your business</h1>
+    <p style="color:rgba(255,255,255,0.65);font-size:1.05rem;max-width:520px;margin-top:0.75rem;">A free 30-minute walkthrough tailored to your business type — no sales pressure, no commitment required.</p>
+  </div>
+</div>
+
+<section style="background:var(--grey-4);padding:0 0 5rem;">
+  <div class="container">
+    <div class="demo-layout">
+
+      <div>
+        <h3 style="margin-bottom:1.5rem;margin-top:3rem;">What to expect</h3>
+        <ul class="what-to-expect" style="list-style:none;">
+          <li>
+            <div class="expect-icon">📋</div>
+            <div class="expect-text">
+              <h4>We learn about your business</h4>
+              <p>We'll ask about your team, how you currently manage enquiries, and what's not working — so the demo is relevant to you.</p>
+            </div>
+          </li>
+          <li>
+            <div class="expect-icon">🎯</div>
+            <div class="expect-text">
+              <h4>A tailored walkthrough</h4>
+              <p>We'll show you exactly how FloTize would handle your specific workflow — with your categories, your statuses, your clients.</p>
+            </div>
+          </li>
+          <li>
+            <div class="expect-icon">✨</div>
+            <div class="expect-text">
+              <h4>Live AI in action</h4>
+              <p>We'll show you the AI email ingestion, AI draft responses, and analytics — live, not in a slide deck.</p>
+            </div>
+          </li>
+          <li>
+            <div class="expect-icon">💬</div>
+            <div class="expect-text">
+              <h4>All your questions answered</h4>
+              <p>Pricing, setup, integration, data security — we'll cover everything you need to make a confident decision.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div style="background:var(--teal-mist);border-radius:var(--radius-lg);padding:1.5rem;border:1px solid var(--teal-pale);margin-top:2rem;">
+          <div style="font-size:0.78rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.75rem;">What our clients say</div>
+          <p style="font-size:0.925rem;color:var(--grey-1);font-style:italic;margin-bottom:0.75rem;">"FloTize changed how we handle client enquiries completely. What used to take 20 minutes of admin per enquiry now takes 2 minutes — and nothing gets missed."</p>
+          <div style="font-size:0.82rem;font-weight:600;color:var(--dark);">— Professional services client</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="demo-form-card" style="margin-top:3rem;">
+          <h2>Book your free demo</h2>
+          <p>Fill in your details and we'll be in touch within one business day to arrange a time that works for you.</p>
+
+          <form id="demo-form">
+            <div class="form-group">
+              <label for="name">Full name *</label>
+              <input type="text" id="name" placeholder="e.g. Sarah Mitchell" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Work email *</label>
+              <input type="email" id="email" placeholder="e.g. sarah@mitchelllaw.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company name</label>
+              <input type="text" id="company" placeholder="e.g. Mitchell &amp; Partners" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number <span style="color:var(--grey-2);font-weight:400;">(optional)</span></label>
+              <input type="tel" id="phone" placeholder="e.g. +353 87 123 4567" />
+            </div>
+            <div class="form-group">
+              <label for="business-type">Business type</label>
+              <select id="business-type">
+                <option value="">Select your business type</option>
+                <option>Legal practice</option>
+                <option>Accountancy firm</option>
+                <option>Consultancy</option>
+                <option>Estate agency</option>
+                <option>Financial services</option>
+                <option>Architecture / design</option>
+                <option>Other professional services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="team-size">Team size</label>
+              <select id="team-size">
+                <option value="">Select team size</option>
+                <option>Just me</option>
+                <option>2–5 people</option>
+                <option>6–15 people</option>
+                <option>16–30 people</option>
+                <option>30+ people</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">What's your biggest challenge with managing client enquiries? *</label>
+              <textarea id="message" placeholder="e.g. Things fall through the cracks when we're busy, or we're slow to follow up on quotes..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              Request my free demo →
+            </button>
+            <p style="font-size:0.78rem;text-align:center;margin-top:0.75rem;color:var(--grey-2);">We'll respond within one business day · No commitment required</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
+        <p>AI-powered workflow management for service businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="demo.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FloTize. All rights reserved.</span>
+      <span>micheal.sheehan@flotize.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

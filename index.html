@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FloTize — AI-Powered Workflow Management for Service Businesses</title>
+  <meta name="description" content="FloTize helps service businesses manage client enquiries, automate workflows, and respond faster using AI. Never let a lead fall through the cracks again." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hero {
+      background: var(--dark);
+      padding: 6rem 0 5rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(15,118,110,0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 4rem;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal-light);
+      background: rgba(20,184,166,0.12);
+      border: 1px solid rgba(20,184,166,0.25);
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 { color: var(--white); margin-bottom: 1.25rem; }
+    .hero h1 em { font-style: normal; color: var(--teal-light); }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 2.25rem;
+      max-width: 520px;
+      line-height: 1.7;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .hero-trust {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 1.5rem;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+    }
+    .step-number {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--teal-pale);
+      color: var(--teal);
+      font-weight: 800;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step h3 { margin-bottom: 0.4rem; }
+    .step p { font-size: 0.925rem; }
+    .cta-band { background: var(--teal); padding: 5rem 0; text-align: center; }
+    .cta-band h2 { color: var(--white); margin-bottom: 1rem; }
+    .cta-band p { color: rgba(255,255,255,0.8); margin-bottom: 2rem; font-size: 1.05rem; }
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/fd-mark.png" alt="FloTize" />
+        <span>FloTize</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/features.html">Features</a>
+        <a href="pages/pricing.html">Pricing</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="pages/demo.html" class="btn btn-primary">Book a Demo</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">✦ AI-Powered Workflow Management</div>
+        <h1>Every client enquiry,<br /><em>handled intelligently</em></h1>
+        <p class="hero-sub">FloTize helps service businesses capture, track, and respond to client enquiries using AI — so nothing falls through the cracks and every client feels like your only client.</p>
+        <div class="hero-actions">
+          <a href="pages/demo.html" class="btn btn-primary btn-lg">Book a free demo →</a>
+          <a href="pages/features.html" class="btn btn-outline btn-lg">See how it works</a>
+        </div>
+        <div class="hero-trust">
+          <span>✓ No credit card required</span>
+          <span>✓ Set up in under a day</span>
+          <span>✓ Cancel anytime</span>
+        </div>
+      </div>
+
+      <div class="hero-demo">
+        <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem;">Live in your workflow</div>
+        <div class="demo-card">
+          <div class="demo-card-header">
+            <span class="demo-card-name">Sarah Mitchell</span>
+            <span class="demo-card-badge new">NEW</span>
+          </div>
+          <div class="demo-card-text">Enquiry re: quarterly accounts review — needs urgent response</div>
+          <div class="demo-status-row">
+            <span class="demo-pill">Accounting</span>
+            <span class="demo-pill">Email</span>
+          </div>
+        </div>
+        <div class="demo-card" style="border-left-color:#20c997">
+          <div class="demo-card-header">
+            <span class="demo-card-name">Clarke &amp; Partners</span>
+            <span class="demo-card-badge">QUOTED</span>
+          </div>
+          <div class="demo-card-text">AI draft ready — contract review proposal €2,400</div>
+          <div class="demo-status-row">
+            <span class="demo-pill">Legal</span>
+            <span class="demo-pill" style="background:#e7f0ff;color:#1d4ed8">✨ AI Draft</span>
+          </div>
+        </div>
+        <div class="demo-card" style="border-left-color:#ffc107">
+          <div class="demo-card-header">
+            <span class="demo-card-name">Brennan Consulting</span>
+            <span class="demo-card-badge" style="background:#fef3c7;color:#92400e">FOLLOW UP</span>
+          </div>
+          <div class="demo-card-text">Quote sent 6 days ago — follow-up overdue</div>
+          <div class="demo-status-row">
+            <span class="demo-pill">Consulting</span>
+          </div>
+        </div>
+        <div style="margin-top:1rem;padding:0.75rem;background:rgba(15,118,110,0.15);border-radius:8px;border:1px solid rgba(15,118,110,0.3);">
+          <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);margin-bottom:0.25rem;">Today's health</div>
+          <div style="display:flex;align-items:center;gap:0.5rem;">
+            <span style="width:10px;height:10px;border-radius:50%;background:#20c997;display:inline-block;"></span>
+            <span style="font-size:0.82rem;color:rgba(255,255,255,0.8);font-weight:500;">All responses on track</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <div class="stat-grid">
+      <div class="reveal">
+        <div class="stat-number">&lt; 2min</div>
+        <div class="stat-label">Average AI email classification time</div>
+      </div>
+      <div class="reveal">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Of enquiries captured automatically</div>
+      </div>
+      <div class="reveal">
+        <div class="stat-number">3x</div>
+        <div class="stat-label">Faster average response time</div>
+      </div>
+      <div class="reveal">
+        <div class="stat-number">Zero</div>
+        <div class="stat-label">Leads fall through the cracks</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">How it works</span>
+      <h2>From inbox to invoiced, without the chaos</h2>
+      <p>FloTize connects your email, your team, and your clients into one intelligent workflow — powered by AI from the moment an enquiry arrives.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="reveal">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Enquiry arrives</h3>
+            <p>An email lands in your monitored inbox. FloTize's AI reads it, classifies it, extracts the client's name and contact details, and creates a new request automatically — in under two minutes.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>AI drafts your response</h3>
+            <p>Based on your past replies, your knowledge base, and the client's message, FloTize drafts a suggested response. Edit it, personalise it, or send it as-is — your choice.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Track it through to won</h3>
+            <p>Move requests through your pipeline — quoted, won, delivered. Log effort, track costs, generate invoices, and see exactly where every piece of work stands.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Analyse and improve</h3>
+            <p>Revenue, margins, response times, conversion rates — all in one analytics dashboard. AI-powered insights surface what's working and what needs attention.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="background:var(--teal-mist);border-radius:var(--radius-lg);padding:2.5rem;border:1px solid var(--teal-pale);">
+        <div style="font-size:0.78rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Overview — Today</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
+          <div style="background:white;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+            <div style="font-size:1.8rem;font-weight:800;color:var(--teal);">3</div>
+            <div style="font-size:0.75rem;color:var(--grey-2);margin-top:0.2rem;">New today</div>
+          </div>
+          <div style="background:white;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+            <div style="font-size:1.8rem;font-weight:800;color:#0D6EFD;">7</div>
+            <div style="font-size:0.75rem;color:var(--grey-2);margin-top:0.2rem;">Active pipeline</div>
+          </div>
+          <div style="background:white;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+            <div style="font-size:1.8rem;font-weight:800;color:#20c997;">€12k</div>
+            <div style="font-size:0.75rem;color:var(--grey-2);margin-top:0.2rem;">Pipeline value</div>
+          </div>
+          <div style="background:white;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+            <div style="font-size:1.8rem;font-weight:800;color:#6610f2;">94%</div>
+            <div style="font-size:0.75rem;color:var(--grey-2);margin-top:0.2rem;">SLA compliance</div>
+          </div>
+        </div>
+        <div style="background:white;border-radius:10px;padding:1rem;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+            <span style="width:10px;height:10px;border-radius:50%;background:#20c997;display:inline-block;flex-shrink:0;"></span>
+            <span style="font-size:0.85rem;font-weight:600;color:var(--dark);">All systems healthy</span>
+          </div>
+          <div style="font-size:0.78rem;color:var(--grey-2);">No overdue responses · 2 quotes to follow up</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-mist">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Features</span>
+      <h2>Everything your team needs, nothing they don't</h2>
+      <p>Built specifically for service businesses — not adapted from a generic CRM.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="card-icon">📧</div>
+        <h3>AI Email Ingestion</h3>
+        <p>Every email to your monitored inbox is automatically read, classified, and turned into a tracked request — with the client's details extracted by AI.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">✨</div>
+        <h3>AI Draft Responses</h3>
+        <p>FloTize drafts replies based on your past responses, your business knowledge base, and the client's message. Edit or send — your call.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">📊</div>
+        <h3>Pipeline &amp; Analytics</h3>
+        <p>Track every request from new to invoiced. See revenue, margins, response times, and conversion rates in one clear dashboard.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">⏱</div>
+        <h3>SLA Monitoring</h3>
+        <p>Set response time targets and get alerted before you breach them. Never miss a deadline or lose a client to slow follow-up again.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">👥</div>
+        <h3>Client Management</h3>
+        <p>A full client database with contact history, spend tracking, communication preferences, and tiered service levels per client.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🔒</div>
+        <h3>GDPR Compliance</h3>
+        <p>Built-in data retention policies, right-to-erasure tools, and a full audit log — so compliance is automatic, not an afterthought.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="pages/features.html" class="btn btn-outline-dark">See all features →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Who it's for</span>
+      <h2>Built for professional service teams</h2>
+      <p>If your business runs on client relationships and email, FloTize was built for you.</p>
+    </div>
+    <div class="grid-4">
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">⚖️</div>
+        <h4>Legal Practices</h4>
+        <p style="font-size:0.875rem;">Never miss a client enquiry or court deadline again.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">📋</div>
+        <h4>Accountancy Firms</h4>
+        <p style="font-size:0.875rem;">Manage client requests, deadlines, and communications in one place.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏢</div>
+        <h4>Consultancies</h4>
+        <p style="font-size:0.875rem;">Track projects, proposals, and client relationships without the spreadsheet chaos.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏠</div>
+        <h4>Estate Agencies</h4>
+        <p style="font-size:0.875rem;">Every viewing request, offer, and query handled and tracked automatically.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to see FloTize in action?</h2>
+    <p>Book a free 30-minute demo and we'll show you exactly how FloTize would work for your business.</p>
+    <a href="pages/demo.html" class="btn btn-outline btn-lg">Book your free demo →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/fd-mark.png" alt="FloTize" />
+        <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
+        <p>AI-powered workflow management for service businesses. Every client enquiry, handled intelligently.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="pages/features.html">Features</a>
+        <a href="pages/pricing.html">Pricing</a>
+        <a href="pages/demo.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FloTize. All rights reserved.</span>
+      <span>micheal.sheehan@flotize.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

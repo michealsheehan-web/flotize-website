@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — FloTize</title>
+  <meta name="description" content="Get in touch with the FloTize team. We respond within one business day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 5rem;
+      align-items: start;
+      padding: 5rem 0;
+    }
+    .contact-method {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .contact-method-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--teal-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-method h4 { margin-bottom: 0.2rem; }
+    .contact-method p { font-size: 0.875rem; margin-bottom: 0; }
+    .contact-form-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--grey-3);
+    }
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <span>FloTize</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+      </div>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div style="background:var(--dark);padding:4rem 0 0;">
+  <div class="container">
+    <span class="section-label">Contact</span>
+    <h1 style="color:white;margin-top:0.5rem;">Get in touch</h1>
+    <p style="color:rgba(255,255,255,0.65);font-size:1.05rem;max-width:480px;margin-top:0.75rem;">We're a small team and we respond to every message personally — usually within one business day.</p>
+  </div>
+</div>
+
+<div style="background:var(--grey-4);">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div>
+        <div class="contact-method">
+          <div class="contact-method-icon">📧</div>
+          <div>
+            <h4>Email us</h4>
+            <p>For general enquiries, support questions, or partnership discussions.</p>
+            <a href="mailto:micheal.sheehan@flotize.com" style="font-weight:600;color:var(--teal);font-size:0.925rem;margin-top:0.3rem;display:inline-block;">micheal.sheehan@flotize.com</a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-method-icon">🎯</div>
+          <div>
+            <h4>Book a demo</h4>
+            <p>Want to see FloTize in action? Book a free 30-minute walkthrough tailored to your business.</p>
+            <a href="demo.html" class="btn btn-primary" style="margin-top:0.6rem;font-size:0.875rem;padding:0.5rem 1.25rem;">Book a demo →</a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-method-icon">💼</div>
+          <div>
+            <h4>Enterprise &amp; partnerships</h4>
+            <p>Looking for a custom enterprise deal, white label arrangement, or channel partnership? Let's talk.</p>
+            <a href="mailto:micheal.sheehan@flotize.com?subject=Enterprise enquiry" style="font-weight:600;color:var(--teal);font-size:0.925rem;margin-top:0.3rem;display:inline-block;">Get in touch →</a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-method-icon">⚡</div>
+          <div>
+            <h4>Response time</h4>
+            <p>We aim to respond to all enquiries within one business day. For urgent support matters, mark your subject line as URGENT.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-form-card">
+          <h2 style="margin-bottom:0.4rem;">Send us a message</h2>
+          <p style="margin-bottom:2rem;font-size:0.925rem;">Fill in the form below and we'll get back to you shortly.</p>
+
+          <form id="demo-form">
+            <div class="form-group">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" placeholder="e.g. Sarah Mitchell" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address *</label>
+              <input type="email" id="email" placeholder="e.g. sarah@mitchelllaw.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company <span style="color:var(--grey-2);font-weight:400;">(optional)</span></label>
+              <input type="text" id="company" placeholder="e.g. Mitchell &amp; Partners" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="">Select a topic</option>
+                <option>General enquiry</option>
+                <option>Book a demo</option>
+                <option>Pricing question</option>
+                <option>Technical support</option>
+                <option>Enterprise / partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              Send message →
+            </button>
+            <p style="font-size:0.78rem;text-align:center;margin-top:0.75rem;color:var(--grey-2);">We respond within one business day</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
+        <p>AI-powered workflow management for service businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="demo.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FloTize. All rights reserved.</span>
+      <span>micheal.sheehan@flotize.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

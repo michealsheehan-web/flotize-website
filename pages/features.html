@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features — FloTize</title>
+  <meta name="description" content="Explore FloTize's full feature set — AI email ingestion, workflow management, analytics, GDPR tools, mass communications and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .page-hero {
+      background: var(--dark);
+      padding: 5rem 0 4rem;
+      text-align: center;
+    }
+    .page-hero h1 { color: var(--white); margin-bottom: 1rem; }
+    .page-hero p { color: rgba(255,255,255,0.65); font-size: 1.1rem; max-width: 580px; margin: 0 auto; }
+
+    .feature-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--grey-3);
+    }
+    .feature-block:last-child { border-bottom: none; }
+    .feature-block.reverse .feature-visual-block { order: -1; }
+    .feature-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+    .feature-block h2 { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    .feature-block p { font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .feature-points { list-style: none; }
+    .feature-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.9rem;
+      color: var(--grey-1);
+      margin-bottom: 0.6rem;
+    }
+    .feature-points li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+    .feature-visual-block {
+      background: var(--teal-mist);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      border: 1px solid var(--teal-pale);
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .tier-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .tier-pro { background: #e7f0ff; color: #1d4ed8; }
+    .tier-business { background: var(--teal-pale); color: var(--teal); }
+    @media (max-width: 768px) {
+      .feature-block { grid-template-columns: 1fr; gap: 2rem; }
+      .feature-block.reverse .feature-visual-block { order: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <span>FloTize</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="features.html" class="active">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+      </div>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Features</span>
+    <h1>Everything you need to run<br />a client-centred business</h1>
+    <p>From the moment an enquiry arrives to the day the invoice is paid — FloTize has it covered.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="feature-block reveal">
+      <div>
+        <div class="feature-label">AI Email Ingestion</div>
+        <h2>Your inbox, working for you</h2>
+        <p>Connect your business email and FloTize automatically reads every incoming message. AI classifies the enquiry, extracts the client's name, phone, and address, and creates a new tracked request — all within minutes of the email arriving.</p>
+        <ul class="feature-points">
+          <li>Connects to Microsoft 365 and Outlook mailboxes</li>
+          <li>AI filters out newsletters, auto-replies, and spam</li>
+          <li>Extracts contact details automatically</li>
+          <li>Replies from clients link back to the original request</li>
+          <li>Monitor up to 5 mailboxes per account</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">New request created</div>
+        <div style="background:white;border-radius:10px;padding:1rem;margin-bottom:0.75rem;border-left:3px solid var(--teal);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--dark);margin-bottom:0.25rem;">James O'Brien</div>
+          <div style="font-size:0.78rem;color:var(--grey-2);margin-bottom:0.5rem;">Requesting a quote for annual accounts review</div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span style="font-size:0.7rem;background:var(--teal-pale);color:var(--teal);padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">Accounting</span>
+            <span style="font-size:0.7rem;background:#e7f0ff;color:#1d4ed8;padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">Email</span>
+            <span style="font-size:0.7rem;background:#dcfce7;color:#166534;padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">AI: 97% confidence</span>
+          </div>
+        </div>
+        <div style="font-size:0.78rem;color:var(--grey-2);text-align:center;">✓ Created automatically from incoming email</div>
+      </div>
+    </div>
+
+    <div class="feature-block reverse reveal">
+      <div>
+        <div class="feature-label">Workflow Management</div>
+        <h2>Table view or Kanban — your choice</h2>
+        <p>See every request in a flexible table or drag-and-drop Kanban board. Filter by category, assignee, client, tier, or date range. Sort, search, and bulk-manage your entire pipeline in one view.</p>
+        <ul class="feature-points">
+          <li>Drag-and-drop Kanban with automatic status updates</li>
+          <li>Customisable columns and filters</li>
+          <li>SLA badges highlight overdue and at-risk requests</li>
+          <li>CSV import and export</li>
+          <li>Case number generation and full audit trail</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">Pipeline view</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+          <div style="background:white;border-radius:8px;padding:0.75rem;border-top:3px solid #0D6EFD;">
+            <div style="font-size:0.7rem;font-weight:700;color:#0D6EFD;margin-bottom:0.5rem;">NEW · 4</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);">Mitchell &amp; Co</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.3rem;">Brennan Legal</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:0.75rem;border-top:3px solid #ffc107;">
+            <div style="font-size:0.7rem;font-weight:700;color:#92400e;margin-bottom:0.5rem;">QUOTED · 3</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);">Clarke Partners</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.3rem;">O'Brien Tax</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:0.75rem;border-top:3px solid #20c997;">
+            <div style="font-size:0.7rem;font-weight:700;color:#166534;margin-bottom:0.5rem;">WON · 6</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);">Murphy &amp; Sons</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.3rem;">+4 more</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-block reveal">
+      <div>
+        <div class="feature-label">AI Draft Responses <span class="tier-tag tier-business">Business</span></div>
+        <h2>Reply in seconds, not minutes</h2>
+        <p>FloTize drafts email responses using your past replies, your business knowledge base, and the client's message. The more you use it, the better it gets — learning your tone, your pricing, and your service details over time.</p>
+        <ul class="feature-points">
+          <li>Learns from your past responses automatically</li>
+          <li>References your Knowledge Base for accuracy</li>
+          <li>Category-aware — different tone for different service types</li>
+          <li>Edit before sending or approve instantly</li>
+          <li>200 AI drafts included per month on Business plan</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.75rem;">✨ AI Draft</div>
+        <div style="background:white;border-radius:10px;padding:1rem;font-size:0.82rem;color:var(--grey-1);line-height:1.6;margin-bottom:0.75rem;border:1px solid var(--grey-3);">
+          Hi Sarah,<br /><br />
+          Thanks for reaching out. We'd be happy to assist with your annual accounts review.<br /><br />
+          Our standard turnaround is 5–7 working days. I'll send over a detailed proposal by end of day tomorrow.<br /><br />
+          Best regards,<br />
+          The FloTize Team
+        </div>
+        <div style="font-size:0.72rem;color:var(--grey-2);">✓ Used 3 past responses · 2 knowledge entries · 198 drafts remaining</div>
+      </div>
+    </div>
+
+    <div class="feature-block reverse reveal">
+      <div>
+        <div class="feature-label">Analytics <span class="tier-tag tier-pro">Professional</span></div>
+        <h2>Know your numbers inside out</h2>
+        <p>A full analytics dashboard covering revenue, costs, margins, conversion rates, response times, and team utilisation. AI-powered insights surface trends and flag issues before they become problems.</p>
+        <ul class="feature-points">
+          <li>Revenue and margin tracking per client and category</li>
+          <li>Staff utilisation and cost of service reporting</li>
+          <li>Conversion rate and pipeline flow analysis</li>
+          <li>SLA compliance and response time trends</li>
+          <li>AI Insights — GPT-4o analysis of your business data</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">This month</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+          <div style="background:white;border-radius:8px;padding:0.9rem;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:var(--teal);">€24.8k</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.2rem;">Revenue</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:0.9rem;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#20c997;">67%</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.2rem;">Avg margin</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:0.9rem;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#0D6EFD;">84%</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.2rem;">Conversion</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:0.9rem;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#6610f2;">1.4h</div>
+            <div style="font-size:0.72rem;color:var(--grey-2);margin-top:0.2rem;">Avg response</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-block reveal">
+      <div>
+        <div class="feature-label">Mass Communications <span class="tier-tag tier-pro">Professional</span></div>
+        <h2>Stay front of mind with your clients</h2>
+        <p>Send personalised bulk emails to your opted-in client base — newsletters, service updates, seasonal promotions. Every email is personalised with the client's name and company, with automatic unsubscribe handling for GDPR compliance.</p>
+        <ul class="feature-points">
+          <li>Personalise with client name and company automatically</li>
+          <li>Filter recipients by tier, status, or tag</li>
+          <li>GDPR-compliant unsubscribe links included automatically</li>
+          <li>Full delivery log with per-recipient status</li>
+          <li>Preview before sending</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">Campaign sent</div>
+        <div style="background:white;border-radius:10px;padding:1rem;margin-bottom:0.75rem;">
+          <div style="font-weight:600;font-size:0.875rem;color:var(--dark);margin-bottom:0.5rem;">Q3 Service Update</div>
+          <div style="display:flex;gap:1.5rem;font-size:0.78rem;">
+            <div><span style="font-weight:700;color:var(--teal);">48</span> <span style="color:var(--grey-2);">sent</span></div>
+            <div><span style="font-weight:700;color:#20c997;">47</span> <span style="color:var(--grey-2);">delivered</span></div>
+            <div><span style="font-weight:700;color:#dc3545;">1</span> <span style="color:var(--grey-2);">failed</span></div>
+          </div>
+        </div>
+        <div style="font-size:0.72rem;color:var(--grey-2);">✓ Unsubscribe links automatically included</div>
+      </div>
+    </div>
+
+    <div class="feature-block reverse reveal">
+      <div>
+        <div class="feature-label">GDPR &amp; Compliance <span class="tier-tag tier-pro">Professional</span></div>
+        <h2>Compliance built in, not bolted on</h2>
+        <p>Handle data subject requests, manage retention policies, and maintain a full audit log — all from within FloTize. Right-to-erasure requests are processed in minutes, not days.</p>
+        <ul class="feature-points">
+          <li>Anonymise or hard-delete client data on request</li>
+          <li>Automated retention period monitoring</li>
+          <li>Full erasure audit log with date, user, and reference</li>
+          <li>Marketing opt-in tracking per client</li>
+          <li>Overview alerts when retention deadlines approach</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">Data request processed</div>
+        <div style="background:white;border-radius:10px;padding:1rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+            <span style="font-weight:600;font-size:0.875rem;color:var(--dark);">Right to Erasure</span>
+            <span style="font-size:0.7rem;background:#dcfce7;color:#166534;padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">Complete</span>
+          </div>
+          <div style="font-size:0.78rem;color:var(--grey-2);">Client: Sarah Mitchell · Method: Anonymise</div>
+          <div style="font-size:0.78rem;color:var(--grey-2);margin-top:0.25rem;">4 records affected · Actioned by M. Sheehan</div>
+          <div style="font-size:0.72rem;color:var(--grey-3);margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--grey-3);">Ref: GDPR-2026-047 · 23 Jun 2026</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>See every feature in action</h2>
+    <p>Book a free 30-minute demo and we'll walk you through everything — tailored to your business type.</p>
+    <a href="demo.html" class="btn btn-outline btn-lg">Book your free demo →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" />
+        <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
+        <p>AI-powered workflow management for service businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="demo.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FloTize. All rights reserved.</span>
+      <span>micheal.sheehan@flotize.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
