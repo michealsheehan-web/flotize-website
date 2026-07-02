@@ -37,10 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return
       }
 
+      // Detect page type — trial vs demo/contact
+      const isTrial = window.location.pathname.includes('demo.html')
+      const requestType = isTrial ? 'Trial Request' : 'Demo Request'
+
       // Build mailto link
-      const subject = encodeURIComponent(`Demo Request — ${company || name}`)
+      const subject = encodeURIComponent(`${requestType} — ${company || name}`)
       const body = encodeURIComponent(
-        `Name: ${name}\nCompany: ${company || 'Not provided'}\nEmail: ${email}\nPhone: ${form.querySelector('#phone')?.value?.trim() || 'Not provided'}\n\nMessage:\n${message}`
+        `Type: ${requestType}\nName: ${name}\nCompany: ${company || 'Not provided'}\nEmail: ${email}\nPhone: ${form.querySelector('#phone')?.value?.trim() || 'Not provided'}\n\nMessage:\n${message}`
       )
       window.location.href = `mailto:micheal.sheehan@flotize.com?subject=${subject}&body=${body}`
 
@@ -48,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       form.innerHTML = `
         <div style="text-align:center;padding:3rem 1rem;">
           <div style="font-size:3rem;margin-bottom:1rem;">✅</div>
-          <h3 style="margin-bottom:0.5rem;color:#0C1117">Request sent!</h3>
-          <p style="color:#6B7280">Thanks ${name} — we'll be in touch within one business day to arrange your demo.</p>
+          <h3 style="margin-bottom:0.5rem;color:#0C1117">${isTrial ? 'Trial request sent!' : 'Request sent!'}</h3>
+          <p style="color:#6B7280">Thanks ${name} — ${isTrial ? "we'll set up your trial account and be in touch within one business day." : "we'll be in touch within one business day to arrange your demo."}</p>
         </div>
       `
     })
