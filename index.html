@@ -93,6 +93,62 @@
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
     }
+    @media (max-width: 768px) {
+  /* Fix nav menu */
+  .nav-links.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-cta.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-cta.open .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Fix hero */
+  .hero {
+    padding: 3rem 0 3rem;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-trust {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  /* Fix how it works two column grid */
+  .responsive-two-col {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Hide the overview widget on mobile — steps content is enough */
+  .responsive-two-col > div:last-child {
+    display: none;
+  }
+
+  /* Fix stat grid */
+  .stat-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
   </style>
 </head>
 <body>
@@ -214,7 +270,7 @@
       <h2>From inbox to invoiced, without the chaos</h2>
       <p>FloTize connects your email, your team, and your clients into one intelligent workflow — powered by AI from the moment an enquiry arrives.</p>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+    <div class="responsive-two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
       <div class="reveal">
         <div class="step">
           <div class="step-number">1</div>
