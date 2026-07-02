@@ -78,6 +78,24 @@
       .compare-table { font-size: 0.78rem; }
       .compare-table th, .compare-table td { padding: 0.6rem 0.5rem; }
     }
+    @media (max-width: 768px) {
+  .nav-links.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-cta.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-cta.open .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
   </style>
 </head>
 <body>

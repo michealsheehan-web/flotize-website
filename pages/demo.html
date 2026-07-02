@@ -48,6 +48,24 @@
     @media (max-width: 900px) {
       .demo-layout { grid-template-columns: 1fr; gap: 3rem; }
     }
+    @media (max-width: 768px) {
+  .nav-links.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-cta.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-cta.open .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
   </style>
 </head>
 <body>

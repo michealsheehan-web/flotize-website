@@ -17,6 +17,24 @@
     .legal-content h2 { font-size: 1.3rem; margin: 2rem 0 0.75rem; }
     .legal-content p, .legal-content li { font-size: 0.95rem; margin-bottom: 0.75rem; }
     .legal-content ul { padding-left: 1.5rem; }
+    @media (max-width: 768px) {
+  .nav-links.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-cta.open {
+    background: var(--dark);
+    padding: 0.5rem 1rem 1rem;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-cta.open .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
   </style>
 </head>
 <body>
