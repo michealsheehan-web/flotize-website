@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const body = encodeURIComponent(
         `Type: ${requestType}\nName: ${name}\nCompany: ${company || 'Not provided'}\nEmail: ${email}\nPhone: ${form.querySelector('#phone')?.value?.trim() || 'Not provided'}\n\nMessage:\n${message}`
       )
-      window.location.href = `mailto:micheal.sheehan@flotize.com?subject=${subject}&body=${body}`
+      window.location.href = `mailto:info@flotize.com?subject=${subject}&body=${body}`
 
       // Show success
       form.innerHTML = `
