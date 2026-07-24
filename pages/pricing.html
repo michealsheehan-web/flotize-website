@@ -51,6 +51,10 @@
     }
     .check { color: var(--teal); font-size: 1rem; font-weight: 700; }
     .cross { color: var(--grey-3); font-size: 1rem; }
+    .pricing-grid { align-items: stretch; }
+    .pricing-card { display: flex; flex-direction: column; }
+    .pricing-card .btn { margin-top: auto; }
+    .pricing-card .pricing-features { flex: 1; }
 
     .faq-item {
       border-bottom: 1px solid var(--grey-3);
@@ -158,8 +162,7 @@
         <a href="demo.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Get started</a>
       </div>
 
-      <div class="pricing-card featured">
-        <div class="pricing-badge">Most popular</div>
+      <div class="pricing-card">
         <div class="pricing-tier">Professional</div>
         <div class="pricing-price">$299<span>/month</span></div>
         <p class="pricing-desc">For growing teams that need deeper client insights and communication tools.</p>
@@ -181,10 +184,11 @@
         <a href="demo.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get started</a>
       </div>
 
-      <div class="pricing-card">
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most popular</div>
         <div class="pricing-tier">Business</div>
         <div class="pricing-price">$599<span>/month</span></div>
-        <p class="pricing-desc">For established firms that want AI-powered responses and full platform access.</p>
+        <p class="pricing-desc">For growing firms that want AI-powered responses, full analytics, and dedicated support.</p>
         <ul class="pricing-features">
           <li>25 users</li>
           <li>Unlimited active requests</li>
@@ -198,7 +202,7 @@
           <li>Phone + video support</li>
           <li>Quarterly business reviews</li>
         </ul>
-        <a href="demo.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Get started</a>
+        <a href="demo.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get started</a>
       </div>
 
       <div class="pricing-card">
@@ -223,24 +227,24 @@
 
     <div class="consulting-card reveal">
       <div>
-        <h3>Need help getting set up?</h3>
-        <p>Our team can handle onboarding, data migration, workflow configuration, and staff training — so you're up and running in days, not weeks.</p>
+        <h3>Free onboarding included with every plan</h3>
+        <p>We set up your account personally — categories, statuses, team configuration, and inbox connection — so you're capturing real work from day one. No setup fee, no implementation project, no waiting.</p>
         <div style="display:flex;gap:2rem;margin-top:1.25rem;flex-wrap:wrap;">
           <div>
-            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">$1,500</div>
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Onboarding &amp; setup</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">Free</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Account setup &amp; configuration</div>
           </div>
           <div>
-            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">$400/session</div>
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Staff training</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">1 day</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Typical time to go live</div>
           </div>
           <div>
-            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">$300–600/mo</div>
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Managed service</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">Included</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Walkthrough for your team</div>
           </div>
         </div>
       </div>
-      <a href="contact.html" class="btn btn-outline" style="white-space:nowrap;">Talk to us →</a>
+      <a href="demo.html" class="btn btn-outline" style="white-space:nowrap;">Start free trial →</a>
     </div>
 
     <div class="reveal" style="margin-top:4rem;">
