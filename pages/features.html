@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Features — FloTize Work Operating System for Professional Service Firms</title>
-  <meta name="description" content="FloTize captures every client request automatically, gives managers full visibility over workload and SLAs, and delivers AI-powered insights to improve margins — built for accountancy, legal, and professional service firms." />
+  <meta name="description" content="FloTize captures every client request automatically, categorises and assigns it, watches every SLA and deadline, and delivers AI-powered insights to improve margins — built for accountancy, legal, and professional service firms." />
   <meta name="keywords" content="professional services workflow software, accountancy practice management, law firm client tracking, SLA monitoring software, AI email ingestion, client profitability reporting" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -140,10 +140,14 @@
         <ul class="feature-points">
           <li>AI reads and classifies every email in under 2 minutes</li>
           <li>Extracts client name, phone, and contact details automatically</li>
+          <li>Suggests a category and job type with a confidence score — anything uncertain is flagged for a one-click check</li>
+          <li>Learns from your confirmations and corrections, sender by sender — see, delete, or switch off what it has learned</li>
+          <li>Auto-assigns new requests by category, job type, and current workload</li>
           <li>Filters out newsletters, auto-replies, and spam</li>
           <li>Client replies thread back to the original request</li>
           <li>Recurring work auto-generated — monthly bookkeeping, compliance checks, scheduled reviews</li>
           <li>Monitor up to 5 mailboxes per account</li>
+          <li>Bulk import and export requests by CSV</li>
         </ul>
       </div>
       <div class="feature-visual-block">
@@ -157,7 +161,15 @@
             <span style="font-size:0.7rem;background:#dcfce7;color:#166534;padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">AI: 97% confidence</span>
           </div>
         </div>
-        <div style="font-size:0.78rem;color:var(--grey-2);text-align:center;">✓ Created automatically from incoming email</div>
+        <div style="background:white;border-radius:10px;padding:1rem;margin-bottom:0.75rem;border-left:3px solid #f59e0b;">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--dark);margin-bottom:0.25rem;">Dunne &amp; Co</div>
+          <div style="font-size:0.78rem;color:var(--grey-2);margin-bottom:0.5rem;">Question about last month's payment</div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span style="font-size:0.7rem;background:#fef3c7;color:#92400e;padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">🧠 Check category</span>
+            <span style="font-size:0.7rem;background:#e7f0ff;color:#1d4ed8;padding:0.15rem 0.5rem;border-radius:8px;font-weight:600;">AI: 58% confidence</span>
+          </div>
+        </div>
+        <div style="font-size:0.78rem;color:var(--grey-2);text-align:center;">✓ Created automatically from incoming email — unsure ones flagged for review</div>
       </div>
     </div>
 
@@ -172,6 +184,8 @@
           <li>SLA badges flag overdue and at-risk requests before they breach</li>
           <li>Team capacity view — see who's overloaded and who has availability</li>
           <li>Filter by client tier, category, assignee, or date range</li>
+          <li>Overview alerts and a traffic-light health indicator — click any alert to land on exactly those requests</li>
+          <li>Role-based access — Staff, Manager, and Admin — tied to each person's Microsoft login</li>
           <li>Case number generation and full audit trail on every request</li>
         </ul>
       </div>
@@ -199,6 +213,31 @@
 
     <div class="feature-block reveal">
       <div>
+        <div class="feature-label">Service Levels</div>
+        <h2>Deadlines that watch themselves</h2>
+        <p>A response target only helps if somebody notices when it slips. FloTize runs every clock automatically and tells you — on the Overview, in the request list, and in your reports — while there is still time to act.</p>
+        <ul class="feature-points">
+          <li>First-response and client-reply turnaround targets on every request</li>
+          <li>Time limits per status, plus an overall cycle-time limit</li>
+          <li>Target dates with early warning — and a red flag the moment one passes</li>
+          <li>Quote follow-up and "going cold" reminders</li>
+          <li>Tighter limits for priority clients with per-tier overrides</li>
+          <li>Business days and working hours supported — weekends and public holidays don't count against you, and a "day" can mean a working day</li>
+          <li>SLA reports for response times, cycle time, status limits, and target-date hit rate</li>
+        </ul>
+      </div>
+      <div class="feature-visual-block">
+        <div style="font-size:0.72rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;">Needs attention today</div>
+        <div style="background:white;border-radius:8px;padding:0.7rem 0.9rem;margin-bottom:0.5rem;border-left:3px solid #dc3545;font-size:0.82rem;color:var(--grey-1);"><strong>2</strong> first responses overdue</div>
+        <div style="background:white;border-radius:8px;padding:0.7rem 0.9rem;margin-bottom:0.5rem;border-left:3px solid #dc3545;font-size:0.82rem;color:var(--grey-1);"><strong>1</strong> request past its target date</div>
+        <div style="background:white;border-radius:8px;padding:0.7rem 0.9rem;margin-bottom:0.5rem;border-left:3px solid #f59e0b;font-size:0.82rem;color:var(--grey-1);"><strong>3</strong> client replies waiting</div>
+        <div style="background:white;border-radius:8px;padding:0.7rem 0.9rem;margin-bottom:0.75rem;border-left:3px solid #0D6EFD;font-size:0.82rem;color:var(--grey-1);"><strong>4</strong> target dates approaching</div>
+        <div style="font-size:0.72rem;color:var(--grey-2);">✓ Each alert opens the matching filtered list</div>
+      </div>
+    </div>
+
+    <div class="feature-block reverse reveal">
+      <div>
         <div class="feature-label">AI from Your Business <span class="tier-tag tier-business">Business</span></div>
         <h2>AI that works from your data, not a generic model</h2>
         <p>FloTize AI Draft draws on your own knowledge base, policies, pricing, FAQs, and engagement letters — so answers reflect how your firm actually operates. It's not a general-purpose chatbot. The more you use it, the more accurate it gets.</p>
@@ -223,7 +262,7 @@
       </div>
     </div>
 
-    <div class="feature-block reverse reveal">
+    <div class="feature-block reveal">
       <div>
         <div class="feature-label">Reporting & Improvement <span class="tier-tag tier-pro">Professional</span></div>
         <h2>Built-in reporting to drive improvement</h2>
@@ -233,6 +272,8 @@
           <li>Client profitability — know precisely what it costs to service each client</li>
           <li>Benchmark by category and job type against your top-performing work</li>
           <li>Pipeline bottlenecks — see where work stalls</li>
+          <li>Revenue by source and category, plus a cost-and-margin trend that shows margin slipping early</li>
+          <li>Parser accuracy — how often the AI's category was kept versus corrected, improving over time</li>
           <li>AI Insights — GPT-4o highlights what's working and what needs attention</li>
           <li>Data-grounded quotes — FloTize suggests pricing based on median time for similar jobs</li>
         </ul>
@@ -260,7 +301,7 @@
       </div>
     </div>
 
-    <div class="feature-block reveal">
+    <div class="feature-block reverse reveal">
       <div>
         <div class="feature-label">Client Relationships <span class="tier-tag tier-pro">Professional</span></div>
         <h2>Every client relationship, in one record</h2>
@@ -269,6 +310,8 @@
           <li>Dedicated client records with contacts, tier, contract details, and tags</li>
           <li>Full linked history of every request per client</li>
           <li>Payment terms and client-specific SLA overrides</li>
+          <li>Contract values with start and end dates — contract-covered work isn't double-counted as billable revenue</li>
+          <li>Documents panel — link SharePoint and OneDrive files to each client</li>
           <li>GDPR-compliant bulk email campaigns sent directly from client records</li>
           <li>Filter recipients by tier, status, or tag</li>
           <li>Personalise with client name and company automatically</li>
@@ -288,7 +331,7 @@
       </div>
     </div>
 
-    <div class="feature-block reverse reveal">
+    <div class="feature-block reveal">
       <div>
         <div class="feature-label">Compliance Built In <span class="tier-tag tier-pro">Professional</span></div>
         <h2>A defensible process for client data — as standard</h2>
@@ -340,6 +383,21 @@
         <div class="card-icon">📊</div>
         <h3>See where time actually goes</h3>
         <p>Log time against specific requests and clients. See utilisation across your team. Identify which work types take longer than expected — and adjust your pricing or process accordingly.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🎯</div>
+        <h3>Right person, automatically</h3>
+        <p>New requests go to someone eligible for that category and job type, balanced by current workload. A hand-picked assignee is never overridden, and you're told if nobody is eligible.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🧠</div>
+        <h3>AI that learns your categories</h3>
+        <p>When the AI isn't sure, it asks. Your confirmations and corrections teach it for that sender — and it only ever advises: what the email actually says always wins.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">📅</div>
+        <h3>Calendar and capacity</h3>
+        <p>Schedule work and team activities across several people, log non-workflow time, add public holidays, and see utilisation against the hours people actually have.</p>
       </div>
     </div>
   </div>
