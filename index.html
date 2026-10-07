@@ -153,9 +153,21 @@
     display: none;
   }
 
-  /* Fix stat grid */
+  /* Fix stat grid — minmax(0,1fr) stops a wide tile pushing the right column off-screen */
   .stat-grid {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.25rem 0.75rem !important;
+  }
+  .stat-grid > div {
+    min-width: 0;
+  }
+  .stat-number {
+    font-size: clamp(1.25rem, 6.5vw, 1.9rem) !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+  .stat-label {
+    font-size: 0.8rem;
   }
 }
   </style>
