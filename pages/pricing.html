@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing — FloTize</title>
-  <meta name="description" content="Simple, transparent pricing for FloTize. Starter from $149/month. No hidden fees, cancel anytime." />
+  <title>Pricing — $35 per User per Month | FloTize</title>
+  <meta name="description" content="FloTize Starter is $35 per user per month with every feature included, plus monthly AI and email allowances. Larger teams get a custom plan. 14-day free trial." />
+  <link rel="canonical" href="https://www.flotize.com/pages/pricing.html" />
+  <meta name="theme-color" content="#0C1117" />
+  <meta property="og:site_name" content="FloTize" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pricing — $35 per User per Month | FloTize" />
+  <meta property="og:description" content="FloTize Starter is $35 per user per month with every feature included, plus monthly AI and email allowances. Larger teams get a custom plan. 14-day free trial." />
+  <meta property="og:url" content="https://www.flotize.com/pages/pricing.html" />
+  <meta property="og:image" content="https://www.flotize.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pricing — $35 per User per Month | FloTize" />
+  <meta name="twitter:description" content="FloTize Starter is $35 per user per month with every feature included, plus monthly AI and email allowances. Larger teams get a custom plan. 14-day free trial." />
+  <meta name="twitter:image" content="https://www.flotize.com/images/og-image.png" />
+  <link rel="icon" type="image/png" href="/images/fd-mark.png" />
+  <link rel="apple-touch-icon" href="/images/fd-mark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
   <style>
     .page-hero {
@@ -18,39 +34,6 @@
     .page-hero h1 { color: var(--white); margin-bottom: 1rem; }
     .page-hero p { color: rgba(255,255,255,0.65); font-size: 1.1rem; max-width: 540px; margin: 0 auto; }
 
-    .compare-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 3rem;
-      font-size: 0.875rem;
-    }
-    .compare-table th {
-      padding: 1rem 1.25rem;
-      text-align: left;
-      background: var(--grey-4);
-      color: var(--grey-1);
-      font-weight: 600;
-      border-bottom: 2px solid var(--grey-3);
-    }
-    .compare-table th:not(:first-child) { text-align: center; }
-    .compare-table td {
-      padding: 0.875rem 1.25rem;
-      border-bottom: 1px solid var(--grey-3);
-      color: var(--grey-1);
-    }
-    .compare-table td:not(:first-child) { text-align: center; }
-    .compare-table tr:hover td { background: var(--teal-mist); }
-    .compare-table .section-row td {
-      background: var(--grey-4);
-      font-weight: 700;
-      font-size: 0.78rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--grey-2);
-      padding: 0.6rem 1.25rem;
-    }
-    .check { color: var(--teal); font-size: 1rem; font-weight: 700; }
-    .cross { color: var(--grey-3); font-size: 1rem; }
     .pricing-grid { align-items: stretch; }
     .pricing-card { display: flex; flex-direction: column; }
     .pricing-card .btn { margin-top: auto; }
@@ -79,28 +62,90 @@
 
     @media (max-width: 768px) {
       .consulting-card { grid-template-columns: 1fr; }
-      .compare-table { font-size: 0.78rem; }
-      .compare-table th, .compare-table td { padding: 0.6rem 0.5rem; }
     }
-    @media (max-width: 768px) {
-  .nav-links.open {
-    background: var(--dark);
-    padding: 0.5rem 1rem 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
-  .nav-cta.open {
-    background: var(--dark);
-    padding: 0.5rem 1rem 1rem;
-    flex-direction: column;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .nav-cta.open .btn {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-}
+
+    .pricing-grid { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto; }
+    .allowance-box { background: var(--teal-mist); border: 1px solid var(--teal-pale); border-radius: var(--radius); padding: 0.9rem 1rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--grey-1); }
+    .allowance-box strong { color: var(--teal); }
+    .roadmap-note { font-size: 0.8rem; color: var(--grey-2); border-top: 1px dashed var(--grey-3); padding-top: 0.9rem; margin-bottom: 1.5rem; }
+    .roadmap-note strong { color: var(--grey-1); display: block; margin-bottom: 0.25rem; }
+    .include-card h3 { font-size: 1.05rem; margin-bottom: 0.75rem; color: var(--teal); }
+    .include-card .pricing-features { margin-bottom: 0; }
+    .allow-num { font-size: 2.2rem; font-weight: 800; color: var(--teal); letter-spacing: -0.03em; line-height: 1; margin-bottom: 0.4rem; }
+    @media (max-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — a free 14-day trial with full access to every feature. No credit card required. We help set up your account so you're working with real requests from day one. If you don't continue, your account becomes read-only for 30 days so you can review and export your data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does per-user pricing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Starter is $35 per user per month, so your cost follows the size of your team. A user is anyone you add to your account. For example, a team of five pays $175 per month and shares 250 AI drafts and 2,500 emails each month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if we reach our monthly allowance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Allowances are pooled across your team and renew every month. We alert your admins at 80% and again at 100%. Emails that arrive while you are at your limit are held rather than lost, and are released automatically once more capacity is available. If you regularly need more, talk to us about a custom plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if we need more than Starter offers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Larger teams, higher volumes and bespoke needs are handled with a custom plan. Tell us what you need — more AI and email capacity, guided onboarding, a security review, or something particular to your business — and we'll shape a plan with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a setup fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We help you get configured at no cost. If you would like more hands-on support with workflows or training your team, ask us about a custom plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What email providers do you support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FloTize currently works with Microsoft 365 and Outlook through the Microsoft Graph API, and people sign in with their Microsoft work accounts. Support for additional email providers is on our roadmap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FloTize is hosted on Microsoft Azure in the EU, with the database in North Europe (Ireland). Data is encrypted at rest and in transit. We build in tools to support your GDPR obligations — retention policies, right-to-erasure handling and an audit trail. Full details are in our Privacy Policy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel at any time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — there are no long-term contracts. Cancel anytime and you keep access until the end of your billing period. Contact info@flotize.com to cancel. We delete your data within 30 days of cancellation (copies in backups are removed within a further 7 days), and you can export it as CSV at any time."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -108,7 +153,7 @@
   <div class="container">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">
-        <img src="../images/fd-mark.png" alt="FloTize" />
+        <img src="../images/fd-mark.png" alt="FloTize" width="32" height="32" />
         <span>FloTize</span>
       </a>
       <div class="nav-links">
@@ -122,7 +167,7 @@
         <a href="demo.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);">Book a Demo</a>
         <a href="demo.html" class="btn btn-primary">Start Free Trial</a>
       </div>
-      <button class="nav-toggle">☰</button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </div>
 </nav>
@@ -130,8 +175,8 @@
 <section class="page-hero">
   <div class="container">
     <span class="section-label">Pricing</span>
-    <h1>Simple, transparent pricing</h1>
-    <p>No hidden fees, no long-term contracts. One-day implementation included. Start with the plan that fits your business today and upgrade as you grow.</p>
+    <h1>Simple pricing: $35 per user per month</h1>
+    <p>One plan with every feature included, and generous monthly allowances for AI and email. Pay for the people on your team — larger teams can talk to us about a custom plan.</p>
   </div>
 </section>
 
@@ -140,111 +185,87 @@
 
     <div class="pricing-grid reveal">
 
-      <div class="pricing-card">
-        <div class="pricing-tier">Starter</div>
-        <div class="pricing-price">$149<span>/month</span></div>
-        <p class="pricing-desc">Everything you need to capture and manage client enquiries from day one.</p>
-        <ul class="pricing-features">
-          <li>3 users</li>
-          <li>Up to 1,000 active requests</li>
-          <li>Up to 100 clients</li>
-          <li>AI email ingestion + category check</li>
-          <li>Auto-assign by category and workload</li>
-          <li>Workflow (table + kanban)</li>
-          <li>Client database</li>
-          <li>Basic analytics</li>
-          <li>SLA monitoring + alerts</li>
-          <li>Email support</li>
-          <li class="muted">Mass communications</li>
-          <li class="muted">Advanced analytics</li>
-          <li class="muted">AI draft responses</li>
-          <li class="muted">GDPR tools</li>
-        </ul>
-        <a href="demo.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Get started</a>
-      </div>
-
-      <div class="pricing-card">
-        <div class="pricing-tier">Professional</div>
-        <div class="pricing-price">$299<span>/month</span></div>
-        <p class="pricing-desc">For growing teams that need deeper client insights and communication tools.</p>
-        <ul class="pricing-features">
-          <li>10 users</li>
-          <li>Up to 5,000 active requests</li>
-          <li>Up to 500 clients</li>
-          <li>Everything in Starter</li>
-          <li>Mass communications</li>
-          <li>Client tiering + SLA overrides</li>
-          <li>Advanced analytics + AI insights</li>
-          <li>GDPR + data retention tools</li>
-          <li>Priority email support</li>
-          <li>Onboarding call included</li>
-          <li class="muted">AI draft responses</li>
-          <li class="muted">Custom branding</li>
-          <li class="muted">API access</li>
-        </ul>
-        <a href="demo.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Get started</a>
-      </div>
-
       <div class="pricing-card featured">
-        <div class="pricing-badge">Most popular</div>
-        <div class="pricing-tier">Business</div>
-        <div class="pricing-price">$599<span>/month</span></div>
-        <p class="pricing-desc">For growing firms that want AI-powered responses, full analytics, and dedicated support.</p>
+        <div class="pricing-badge">Everything included</div>
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price">$35<span> per user / month</span></div>
+        <p class="pricing-desc">Every FloTize feature for small and medium teams. Pay only for the people you add.</p>
+        <div class="allowance-box"><strong>Included each month, per user</strong> (pooled across your team):<br />50 AI drafts · 500 emails captured</div>
         <ul class="pricing-features">
-          <li>25 users</li>
-          <li>Unlimited active requests</li>
-          <li>Unlimited clients</li>
-          <li>Everything in Professional</li>
-          <li>AI draft responses (200/month)</li>
-          <li>Knowledge Base for AI context</li>
-          <li>Custom branding</li>
-          <li>API access</li>
-          <li>Dedicated account manager</li>
-          <li>Phone + video support</li>
-          <li>Quarterly business reviews</li>
+          <li>Every feature included — no tiers to unlock</li>
+          <li>AI email capture and category check</li>
+          <li>Auto-assign by category and workload</li>
+          <li>Table and Kanban workflow</li>
+          <li>Client records, contracts and documents</li>
+          <li>SLA monitoring and alerts</li>
+          <li>Team capacity and calendar</li>
+          <li>Analytics, reporting and AI Insights</li>
+          <li>AI draft replies from your knowledge base</li>
+          <li>Bulk email campaigns</li>
+          <li>Data retention and GDPR erasure tools</li>
+          <li>Email support</li>
         </ul>
-        <a href="demo.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get started</a>
+        <a href="demo.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start free trial</a>
       </div>
 
       <div class="pricing-card">
-        <div class="pricing-tier">Enterprise</div>
-        <div class="pricing-price" style="font-size:1.8rem;">Custom<span style="font-size:0.875rem;"> pricing</span></div>
-        <p class="pricing-desc">For larger organisations with complex needs. From $1,200/month.</p>
+        <div class="pricing-tier">Custom</div>
+        <div class="pricing-price" style="font-size:1.8rem;">Let's talk</div>
+        <p class="pricing-desc">For larger teams, higher volumes and bespoke needs. We'll shape a plan around your business.</p>
         <ul class="pricing-features">
-          <li>Unlimited users</li>
-          <li>Unlimited everything</li>
-          <li>Everything in Business</li>
-          <li>Multi-location support</li>
-          <li>White label options</li>
-          <li>Custom integrations</li>
-          <li>SLA guarantees</li>
-          <li>Private cloud / on-premise</li>
-          <li>Dedicated support team</li>
+          <li>Higher AI draft and email allowances</li>
+          <li>Guided onboarding and team training</li>
+          <li>A named contact and priority support</li>
+          <li>Security and data-processing review on request</li>
+          <li>Tailored contract and billing terms</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Contact us</a>
+        <div class="roadmap-note"><strong>Being shaped with customers</strong>API access, custom branding, additional integrations and multi-location setups. Tell us what you would need.</div>
+        <a href="contact.html" class="btn btn-outline-dark" style="width:100%;justify-content:center;">Talk to us</a>
       </div>
 
     </div>
 
-    <p style="text-align:center;font-size:0.82rem;color:var(--grey-2);margin-top:1rem;margin-bottom:0;">Prices shown in USD. EU and UK clients invoiced in EUR or GBP at the prevailing rate.</p>
+    <p style="text-align:center;font-size:0.82rem;color:var(--grey-2);margin-top:1rem;margin-bottom:0;">Prices shown in USD, billed monthly per user. EU and UK clients invoiced in EUR or GBP at the prevailing rate.</p>
     <p style="text-align:center;font-size:0.82rem;color:var(--grey-2);margin-top:0.35rem;margin-bottom:2rem;">All prices exclude applicable taxes. Tax obligations vary by jurisdiction and will be confirmed at point of invoicing.</p>
+
+    <div class="reveal" style="margin-top:3rem;">
+      <h2 style="text-align:center;margin-bottom:0.5rem;">How monthly allowances work</h2>
+      <p style="text-align:center;margin-bottom:2rem;">Allowances are pooled across your whole team and renew every month — a team of five shares 250 AI drafts and 2,500 emails.</p>
+      <div class="grid-3">
+        <div class="card" style="text-align:center;">
+          <div class="allow-num">50</div>
+          <h3>AI drafts per user</h3>
+          <p style="font-size:0.9rem;">AI-written reply drafts, based on your own knowledge base and past responses.</p>
+        </div>
+        <div class="card" style="text-align:center;">
+          <div class="allow-num">500</div>
+          <h3>Emails per user</h3>
+          <p style="font-size:0.9rem;">Incoming emails read, classified and turned into tracked requests.</p>
+        </div>
+        <div class="card" style="text-align:center;">
+          <div class="allow-num">80%</div>
+          <h3>Alerts before you hit the limit</h3>
+          <p style="font-size:0.9rem;">Your admins are told at 80% and 100%. Need more? Talk to us about a custom plan.</p>
+        </div>
+      </div>
+    </div>
 
     <div class="consulting-card reveal">
       <div>
-        <h3>Free onboarding included with every plan</h3>
-        <p>We set up your account personally — categories, statuses, team configuration, and inbox connection — so you're capturing real work from day one. No setup fee, no implementation project, no waiting.</p>
+        <h3>Setup help included</h3>
+        <p>We help you get going — categories, statuses, team configuration and inbox connection — so you're capturing real work quickly. No setup fee, no implementation project.</p>
         <div style="display:flex;gap:2rem;margin-top:1.25rem;flex-wrap:wrap;">
           <div>
-            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">Free</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">No fee</div>
             <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Account setup &amp; configuration</div>
           </div>
           <div>
-            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">1 day</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">About a day</div>
             <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Typical time to go live</div>
           </div>
           <div>
-            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">Included</div>
-            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Walkthrough for your team</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--teal-light);">14 days</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:0.2rem;">Free trial, no credit card</div>
           </div>
         </div>
       </div>
@@ -252,61 +273,53 @@
     </div>
 
     <div class="reveal" style="margin-top:4rem;">
-      <h2 style="text-align:center;margin-bottom:0.5rem;">Full feature comparison</h2>
-      <p style="text-align:center;margin-bottom:0;">See exactly what's included in each plan.</p>
-      <div style="overflow-x:auto;margin-top:2rem;">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th style="width:35%">Feature</th>
-              <th>Starter</th>
-              <th>Professional</th>
-              <th>Business</th>
-              <th>Enterprise</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="section-row"><td colspan="5">Limits</td></tr>
-            <tr><td>Users</td><td>3</td><td>10</td><td>25</td><td>Unlimited</td></tr>
-            <tr><td>Active requests</td><td>1,000</td><td>5,000</td><td>Unlimited</td><td>Unlimited</td></tr>
-            <tr><td>Clients</td><td>100</td><td>500</td><td>Unlimited</td><td>Unlimited</td></tr>
-            <tr class="section-row"><td colspan="5">Core Features</td></tr>
-            <tr><td>AI email ingestion</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Workflow (table + kanban)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Client database</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Basic analytics</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>SLA monitoring</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Calendar + scheduling</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Invoice generation</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>AI category check &amp; parser learning</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Auto-assign by category and workload</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>SLA limits (status, cycle time, target dates)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>SLA performance reports</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Role-based access (Staff / Manager / Admin)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Client contracts &amp; documents</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>CSV import / export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr class="section-row"><td colspan="5">Professional Features</td></tr>
-            <tr><td>Mass communications</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Client tiering + SLA overrides</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Advanced analytics + AI insights</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>GDPR + data retention tools</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr class="section-row"><td colspan="5">Business Features</td></tr>
-            <tr><td>AI draft responses</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td>200/month</td><td>1,000/month</td></tr>
-            <tr><td>Knowledge Base for AI context</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Custom branding</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>API access</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr class="section-row"><td colspan="5">Enterprise Features</td></tr>
-            <tr><td>Multi-location support</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>White label</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Private cloud / on-premise</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td></tr>
-            <tr class="section-row"><td colspan="5">Support</td></tr>
-            <tr><td>Email support</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Priority support</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Extended training session</td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Dedicated account manager</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-            <tr><td>Phone + video support</td><td><span class="cross">–</span></td><td><span class="cross">–</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          </tbody>
-        </table>
+      <h2 style="text-align:center;margin-bottom:0.5rem;">Everything is included, for everyone</h2>
+      <p style="text-align:center;margin-bottom:2rem;">No feature tiers. Every plan gets the full product — only the volumes and support differ.</p>
+      <div class="grid-2">
+        <div class="card include-card">
+          <h3>Capture</h3>
+          <ul class="pricing-features">
+            <li>AI email ingestion, with newsletters and spam filtered out</li>
+            <li>Category and job-type suggestions with a confidence score</li>
+            <li>Parser learning from your corrections</li>
+            <li>Recurring work generated on a schedule</li>
+            <li>Client replies thread back to the original request</li>
+            <li>CSV import and export</li>
+          </ul>
+        </div>
+        <div class="card include-card">
+          <h3>Prioritize</h3>
+          <ul class="pricing-features">
+            <li>Table and Kanban views</li>
+            <li>SLA limits, target dates and alerts</li>
+            <li>Auto-assign by category and workload</li>
+            <li>Team capacity and calendar</li>
+            <li>Client tiers with SLA overrides</li>
+            <li>Role-based access: Staff, Manager, Admin</li>
+          </ul>
+        </div>
+        <div class="card include-card">
+          <h3>Improve</h3>
+          <ul class="pricing-features">
+            <li>Effort and cost by work type, client and staff member</li>
+            <li>Client profitability and pipeline bottlenecks</li>
+            <li>Revenue and margin trends</li>
+            <li>AI Insights on what's working and what needs attention</li>
+            <li>Data-grounded quote suggestions</li>
+            <li>SLA performance reports</li>
+          </ul>
+        </div>
+        <div class="card include-card">
+          <h3>Clients, communication &amp; privacy</h3>
+          <ul class="pricing-features">
+            <li>Client records, contracts and linked documents</li>
+            <li>AI draft replies from your knowledge base</li>
+            <li>Bulk email campaigns with unsubscribe links</li>
+            <li>Invoice generation</li>
+            <li>Retention policies, GDPR erasure and audit log</li>
+            <li>Sign-in with Microsoft 365 accounts</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -314,27 +327,35 @@
       <h2 style="text-align:center;margin-bottom:2rem;">Frequently asked questions</h2>
       <div class="faq-item">
         <h4>Is there a free trial?</h4>
-        <p>Yes — we offer a free 14-day trial with full access to all features in your plan. We set up your account personally and connect your inbox so you're capturing real work from day one. No credit card required to start.</p>
+        <p>Yes — a free 14-day trial with full access to every feature. No credit card required. We help set up your account so you're working with real requests from day one. If you don't continue, your account becomes read-only for 30 days so you can review and export your data.</p>
       </div>
       <div class="faq-item">
-        <h4>Can I change plans later?</h4>
-        <p>Yes — you can upgrade or downgrade at any time. Upgrades take effect immediately. Contact us at info@flotize.com and we'll sort it within one business day.</p>
+        <h4>How does per-user pricing work?</h4>
+        <p>Starter is $35 per user per month, so your cost follows the size of your team. A user is anyone you add to your account. For example, a team of five pays $175 per month and shares 250 AI drafts and 2,500 emails each month.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What happens if we reach our monthly allowance?</h4>
+        <p>Allowances are pooled across your team and renew every month. We alert your admins at 80% and again at 100%. Emails that arrive while you are at your limit are held rather than lost, and are released automatically once more capacity is available. If you regularly need more, talk to us about a custom plan.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What if we need more than Starter offers?</h4>
+        <p>Larger teams, higher volumes and bespoke needs are handled with a custom plan. Tell us what you need — more AI and email capacity, guided onboarding, a security review, or something particular to your business — and we'll shape a plan with you.</p>
       </div>
       <div class="faq-item">
         <h4>Is there a setup fee?</h4>
-        <p>No. Our team sets up your account personally on every plan at no charge — categories, statuses, team configuration, and inbox connection.</p>
+        <p>No. We help you get configured at no cost. If you would like more hands-on support with workflows or training your team, ask us about a custom plan.</p>
       </div>
       <div class="faq-item">
         <h4>What email providers do you support?</h4>
-        <p>FloTize currently integrates with Microsoft 365 and Outlook via Microsoft Graph API. Support for additional email providers is on our roadmap.</p>
+        <p>FloTize currently works with Microsoft 365 and Outlook through the Microsoft Graph API, and people sign in with their Microsoft work accounts. Support for additional email providers is on our roadmap.</p>
       </div>
       <div class="faq-item">
         <h4>Is my data secure?</h4>
-        <p>Yes. All data is stored in Microsoft Azure (North Europe region), encrypted at rest and in transit. FloTize is built with GDPR in mind — including data retention controls, right-to-erasure tools, and an audit trail — and we take data security seriously. Full details in our Privacy Policy.</p>
+        <p>FloTize is hosted on Microsoft Azure in the EU, with the database in North Europe (Ireland). Data is encrypted at rest and in transit. We build in tools to support your GDPR obligations — retention policies, right-to-erasure handling and an audit trail. Full details are in our Privacy Policy.</p>
       </div>
       <div class="faq-item">
         <h4>Can I cancel at any time?</h4>
-        <p>Yes — no long-term contracts. Cancel anytime and you'll retain access until the end of your current billing period. Contact us at info@flotize.com to cancel.</p>
+        <p>Yes — there are no long-term contracts. Cancel anytime and you keep access until the end of your billing period. Contact info@flotize.com to cancel. We delete your data within 30 days of cancellation (copies in backups are removed within a further 7 days), and you can export it as CSV at any time.</p>
       </div>
     </div>
 
@@ -343,8 +364,8 @@
 
 <section class="cta-band">
   <div class="container">
-    <h2>Not sure which plan is right for you?</h2>
-    <p>Book a free 30-minute demo. We'll walk through your firm's workflow and recommend the best fit — then set you up the same day if you're ready to go.</p>
+    <h2>Not sure what you need?</h2>
+    <p>Book a free 30-minute demo. We'll walk through your workflow and tell you honestly whether Starter fits or a custom plan makes more sense.</p>
     <a href="demo.html" class="btn btn-outline btn-lg">Book your free demo →</a>
   </div>
 </section>
@@ -353,9 +374,9 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="../images/fd-mark.png" alt="FloTize" />
+        <img src="../images/fd-mark.png" alt="FloTize" width="32" height="32" />
         <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
-        <p>A work operating system for professional service firms. Capture. Prioritize. Improve.</p>
+        <p>Work management and productivity software for small and medium businesses. Capture. Prioritize. Improve.</p>
       </div>
       <div class="footer-col">
         <h4>Product</h4>

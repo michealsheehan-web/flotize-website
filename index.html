@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FloTize — Work Operating System for Professional Service Firms</title>
-  <meta name="description" content="FloTize helps accountancy firms, law practices, and professional service businesses capture every client request, prioritize work, and improve profitability — from one place. Capture. Prioritize. Improve." />
-  <meta name="keywords" content="workflow management software for accountants, practice management software, client request tracking, work management professional services, AI workflow tool, accountancy practice software, law firm workflow, service business management" />
-  <meta property="og:title" content="FloTize — Work Operating System for Professional Service Firms" />
-  <meta property="og:description" content="Capture every client request, prioritize work across your team, and improve profitability — from one place. Built for accountancy, legal, and professional service firms." />
+  <title>FloTize — Work Management &amp; Productivity Software for SMBs</title>
+  <meta name="description" content="Work management and productivity software for small and medium businesses. Turn your inbox into organised work, set priorities and improve. From $35/user/month." />
+  <link rel="canonical" href="https://www.flotize.com/" />
+  <meta name="theme-color" content="#0C1117" />
+  <meta property="og:site_name" content="FloTize" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://flotize.com" />
+  <meta property="og:title" content="FloTize — Work Management &amp; Productivity Software for SMBs" />
+  <meta property="og:description" content="Work management and productivity software for small and medium businesses. Turn your inbox into organised work, set priorities and improve. From $35/user/month." />
+  <meta property="og:url" content="https://www.flotize.com/" />
+  <meta property="og:image" content="https://www.flotize.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FloTize — Work Operating System for Professional Service Firms" />
-  <meta name="twitter:description" content="Capture every client request, prioritize work, and improve profitability — from one place." />
+  <meta name="twitter:title" content="FloTize — Work Management &amp; Productivity Software for SMBs" />
+  <meta name="twitter:description" content="Work management and productivity software for small and medium businesses. Turn your inbox into organised work, set priorities and improve. From $35/user/month." />
+  <meta name="twitter:image" content="https://www.flotize.com/images/og-image.png" />
+  <link rel="icon" type="image/png" href="/images/fd-mark.png" />
+  <link rel="apple-touch-icon" href="/images/fd-mark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     .hero {
@@ -55,9 +63,8 @@
       border-radius: 20px;
       margin-bottom: 1.5rem;
     }
-    .hero h1 { color: var(--white); margin-bottom: 1.25rem; font-size: clamp(1.25rem, 4vw, 2rem); white-space: nowrap; }
-    .hero h1 em { font-style: normal; color: var(--teal-light); }
-    @media (max-width: 480px) { .hero h1 { font-size: clamp(1rem, 7vw, 1.4rem); } }
+    .hero h1 { color: var(--white); margin-bottom: 1.25rem; font-size: clamp(1.9rem, 4.2vw, 2.9rem); line-height: 1.15; }
+    .hero h1 em { display: block; font-style: normal; color: var(--teal-light); font-size: 0.6em; font-weight: 700; margin-top: 0.75rem; line-height: 1.3; }
     .hero-sub {
       font-size: 1.1rem;
       color: rgba(255,255,255,0.65);
@@ -100,77 +107,54 @@
     .cta-band h2 { color: var(--white); margin-bottom: 1rem; }
     .cta-band p { color: rgba(255,255,255,0.8); margin-bottom: 2rem; font-size: 1.05rem; }
     @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr; }
+      .hero-inner { grid-template-columns: 1fr !important; gap: 2rem !important; }
     }
     @media (max-width: 768px) {
-  /* Fix nav menu */
-  .nav-links.open {
-    background: var(--dark);
-    padding: 0.5rem 1rem 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
-  .nav-cta.open {
-    background: var(--dark);
-    padding: 0.5rem 1rem 1rem;
-    flex-direction: column;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .nav-cta.open .btn {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-  }
-
-  /* Fix hero */
-  .hero {
-    padding: 3rem 0 3rem;
-  }
-  .hero-inner {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-  }
-  .hero-actions {
-    flex-direction: column;
-  }
-  .hero-actions .btn {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .hero-trust {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  /* Fix how it works two column grid */
-  .responsive-two-col {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-  }
-
-  /* Hide the overview widget on mobile — steps content is enough */
-  .responsive-two-col > div:last-child {
-    display: none;
-  }
-
-  /* Fix stat grid — minmax(0,1fr) stops a wide tile pushing the right column off-screen */
-  .stat-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 1.25rem 0.75rem !important;
-  }
-  .stat-grid > div {
-    min-width: 0;
-  }
-  .stat-number {
-    font-size: clamp(1.25rem, 6.5vw, 1.9rem) !important;
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-  }
-  .stat-label {
-    font-size: 0.8rem;
+      .hero { padding: 3rem 0; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { text-align: center; justify-content: center; width: 100%; }
+      .hero-trust { flex-direction: column; gap: 0.4rem; }
+      .responsive-two-col { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .responsive-two-col > div:last-child { display: none; }
+      .stat-grid { grid-template-columns: 1fr 1fr !important; }
+      .stat-number { font-size: 1.7rem; }
+    }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FloTize",
+  "url": "https://www.flotize.com/",
+  "logo": "https://www.flotize.com/images/fd-mark.png",
+  "email": "info@flotize.com"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "FloTize",
+  "url": "https://www.flotize.com/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FloTize",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Work management and productivity software for small and medium businesses. Turns the requests in your Microsoft 365 inbox into organised, prioritized work and shows where time, capacity and money go.",
+  "url": "https://www.flotize.com/",
+  "offers": {
+    "@type": "Offer",
+    "price": "35",
+    "priceCurrency": "USD",
+    "description": "Starter plan, per user per month. Larger teams: custom plans."
   }
 }
-  </style>
+  </script>
 </head>
 <body>
 
@@ -178,7 +162,7 @@
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
-        <img src="images/fd-mark.png" alt="FloTize" />
+        <img src="images/fd-mark.png" alt="FloTize" width="32" height="32" />
         <span>FloTize</span>
       </a>
       <div class="nav-links">
@@ -201,22 +185,22 @@
   <div class="container">
     <div class="hero-inner">
       <div>
-        <div class="hero-eyebrow">✦ Work Operating System for Professional Service Firms</div>
-        <h1><em>Capture → Prioritize → Improve</em></h1>
-        <p class="hero-sub">FloTize is a work operating system for professional service firms. Capture every client request automatically, prioritize work intelligently across your team, and improve margins through better data — all from one place.</p>
+        <div class="hero-eyebrow">✦ Work management software for small &amp; medium businesses</div>
+        <h1>The productivity tool that starts in your inbox.<em>Every request in one place. Clear priorities. Better decisions.</em></h1>
+        <p class="hero-sub">FloTize is work management and productivity software for small and medium businesses. It turns the requests landing in your Microsoft 365 inbox into organised, prioritized work — and shows where your time, your team's capacity and your money go, so you can keep improving.</p>
         <div class="hero-actions">
           <a href="pages/demo.html" class="btn btn-primary btn-lg">Start free trial →</a>
           <a href="pages/demo.html" class="btn btn-outline btn-lg">Book a 30-min demo</a>
         </div>
         <div class="hero-trust">
           <span>✓ No credit card required</span>
-          <span>✓ Set up in under a day</span>
-          <span>✓ Cancel anytime</span>
+          <span>✓ 14-day free trial</span>
+          <span>✓ From $35 per user per month</span>
         </div>
       </div>
 
       <div class="hero-demo">
-        <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem;">Live in your workflow</div>
+        <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem;">Example: your inbox, organised</div>
         <div class="demo-card">
           <div class="demo-card-header">
             <span class="demo-card-name">Sarah Mitchell</span>
@@ -265,39 +249,20 @@
   <div class="container">
     <div class="stat-grid">
       <div class="reveal">
-        <div class="stat-number">Minutes</div>
-        <div class="stat-label">From inbox to a tracked, categorised request</div>
+        <div class="stat-number">Capture</div>
+        <div class="stat-label">Every email request turned into tracked work, automatically</div>
       </div>
       <div class="reveal">
-        <div class="stat-number">Automatic</div>
-        <div class="stat-label">Every enquiry captured from your inbox</div>
+        <div class="stat-number">Prioritize</div>
+        <div class="stat-label">Deadlines, workload and capacity in one view</div>
       </div>
       <div class="reveal">
-        <div class="stat-number">Every request</div>
-        <div class="stat-label">Tracked against your service levels</div>
+        <div class="stat-number">Improve</div>
+        <div class="stat-label">Insight into clients, work types and staff workload</div>
       </div>
       <div class="reveal">
         <div class="stat-number">One place</div>
-        <div class="stat-label">Every client, every request, every response</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-dark" style="padding:4rem 0;">
-  <div class="container">
-    <div class="section-header reveal" style="margin-bottom:2rem;">
-      <span class="section-label" style="color:var(--teal-light);">See it in action</span>
-      <h2 style="color:white;">FloTize in 3 minutes</h2>
-      <p style="color:rgba(255,255,255,0.65);">Watch how a professional service firm captures, prioritizes, and delivers client work — from first email to completed job.</p>
-    </div>
-    <div class="reveal" style="max-width:800px;margin:0 auto;position:relative;background:var(--dark-2);border-radius:var(--radius-lg);border:1px solid rgba(20,184,166,0.25);overflow:hidden;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;">
-      <div style="text-align:center;padding:3rem;">
-        <div style="width:72px;height:72px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;cursor:pointer;">
-          <div style="width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:22px solid white;margin-left:4px;"></div>
-        </div>
-        <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;margin-bottom:0.5rem;">Demo video coming soon</p>
-        <p style="color:rgba(255,255,255,0.35);font-size:0.78rem;margin-bottom:0;">In the meantime, <a href="pages/demo.html" style="color:var(--teal-light);text-decoration:none;">book a live 30-minute walkthrough →</a></p>
+        <div class="stat-label">Every client, request and response, with a full audit trail</div>
       </div>
     </div>
   </div>
@@ -307,8 +272,8 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">How it works</span>
-      <h2>One place to capture, track, and deliver all your work</h2>
-      <p>FloTize connects your email, your team, and your clients into a single intelligent workflow — so nothing gets missed and every client gets the service level they expect.</p>
+      <h2>One place to capture, prioritize and improve all your work</h2>
+      <p>FloTize connects your inbox, your team and your clients into a single workflow — so nothing gets missed, everyone knows what to do next, and you can see how to run the business better.</p>
     </div>
     <div class="responsive-two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
       <div class="reveal">
@@ -316,33 +281,33 @@
           <div class="step-number">1</div>
           <div>
             <h3>Capture everything automatically</h3>
-            <p>Emails are turned into tracked requests within minutes. Staff can log work directly. Recurring jobs — monthly bookkeeping, compliance checks, scheduled reviews — are auto-generated on the schedule you set. Nothing arrives untracked. When the AI isn't sure of a category, it flags the request for a one-click check — and learns from your answer.</p>
+            <p>Emails become tracked requests as they arrive. Staff can log work directly. Recurring jobs — monthly reports, scheduled reviews, regular check-ups — are generated on the schedule you set. Nothing arrives untracked. When the AI isn't sure of a category, it flags the request for a one-click check — and learns from your answer.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-number">2</div>
           <div>
             <h3>Prioritize with full visibility</h3>
-            <p>See what your team can realistically handle, where capacity is unused or overstretched, and which SLA deadlines are approaching. New requests go to the right person automatically, and Overview alerts show what's slipping before it does. View work as a detailed table or a Kanban board — filtered by client, category, or assignee.</p>
+            <p>See what your team can realistically handle, where capacity is spare or stretched, and which deadlines are approaching. New requests go to the right person automatically, and Overview alerts show what's slipping before it does. View work as a table or a Kanban board, filtered by client, category or assignee.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-number">3</div>
           <div>
             <h3>Respond faster with AI</h3>
-            <p>FloTize drafts replies based on your own knowledge base, past responses, and engagement letters. Answers reflect how your firm actually operates — not a generic model. Edit or send as-is — your choice.</p>
+            <p>FloTize drafts replies based on your own knowledge base and past responses, so answers reflect how your business actually operates — not a generic model. Edit or send as-is — your choice.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-number">4</div>
           <div>
-            <h3>Improve through better data</h3>
-            <p>Track effort and cost by work type, client, and staff member. Benchmark performance across job types. Get AI-generated insights that surface what's working and where margins are being lost.</p>
+            <h3>Improve through insight</h3>
+            <p>Track effort and cost by work type, client and staff member. See workload and capacity across the team, benchmark job types, and get AI-generated insights on what's working and where time and money are being lost.</p>
           </div>
         </div>
       </div>
       <div class="reveal" style="background:var(--teal-mist);border-radius:var(--radius-lg);padding:2.5rem;border:1px solid var(--teal-pale);">
-        <div style="font-size:0.78rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Overview — Today · sample data</div>
+        <div style="font-size:0.78rem;font-weight:600;color:var(--teal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1.25rem;">Overview — Today</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
           <div style="background:white;border-radius:10px;padding:1rem;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
             <div style="font-size:1.8rem;font-weight:800;color:var(--teal);">3</div>
@@ -376,9 +341,9 @@
 <section class="section-mist">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Built for professional services</span>
-      <h2>The outcomes that matter to your firm</h2>
-      <p>FloTize is designed for firms that rely on shared inboxes and email — not adapted from a generic project management tool.</p>
+      <span class="section-label">What you get</span>
+      <h2>The outcomes that matter to your business</h2>
+      <p>FloTize is designed for businesses that run on shared inboxes and email — not adapted from a generic project management tool.</p>
     </div>
     <div class="grid-3">
       <div class="card reveal">
@@ -388,28 +353,28 @@
       </div>
       <div class="card reveal">
         <div class="card-icon">📊</div>
-        <h3>Higher margins</h3>
-        <p>See exactly how long different jobs take, what they cost, and what you charged. Know which clients and work types are actually profitable — and price accordingly.</p>
+        <h3>Know what work really costs</h3>
+        <p>See how long different jobs take, what they cost, and what you charged. Understand which clients and work types are actually worth your time — and price accordingly.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">📈</div>
         <h3>More accurate quotes</h3>
-        <p>FloTize suggests pricing based on the median time similar jobs have taken in your firm. Your estimates get more accurate the more you use the platform.</p>
+        <p>FloTize suggests pricing based on the median time similar jobs have taken in your business. Your estimates get more accurate the more you use it.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">⏱</div>
-        <h3>SLA and deadline tracking</h3>
-        <p>Set response, status, cycle-time, and target-date limits — with tighter ones for priority clients — and track them automatically, in working days if you prefer. Get alerted before a deadline is missed, not after.</p>
+        <h3>Deadline tracking</h3>
+        <p>Set response, status, cycle-time and target-date limits — with tighter ones for priority clients — and track them automatically, in working days if you prefer. Get alerted before a deadline is missed, not after.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">👥</div>
-        <h3>True team capacity</h3>
-        <p>Understand what your team can realistically handle. See workload, holidays, and time off across the whole firm in one visual calendar.</p>
+        <h3>Workload and capacity</h3>
+        <p>See who is stretched and who has room, with holidays and time off in one visual calendar — so work is shared fairly and nobody is overloaded.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">🔒</div>
-        <h3>Compliance built in</h3>
-        <p>Data retention policies, GDPR right-to-erasure handling, and a full audit trail come as standard. A defensible, documented process for client data — without extra effort.</p>
+        <h3>Privacy tools built in</h3>
+        <p>Data retention settings, GDPR right-to-erasure handling and a full audit trail come as standard — a documented process for client data without extra effort.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">🧠</div>
@@ -419,12 +384,12 @@
       <div class="card reveal">
         <div class="card-icon">🎯</div>
         <h3>Right person, automatically</h3>
-        <p>New requests are assigned by category, job type, and current workload, so nothing sits waiting for someone to notice it.</p>
+        <p>New requests are assigned by category, job type and current workload, so nothing sits waiting for someone to notice it.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">🚨</div>
         <h3>Alerts that point to the fix</h3>
-        <p>A traffic-light health indicator on your Overview, with alerts for overdue responses, waiting replies, and missed target dates. Click one and land on exactly those requests.</p>
+        <p>A traffic-light health indicator on your Overview, with alerts for overdue responses, waiting replies and missed target dates. Click one and land on exactly those requests.</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:2.5rem;">
@@ -436,30 +401,30 @@
 <section class="section-dark">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label" style="color:var(--teal-light);">Why firms choose FloTize</span>
-      <h2 style="color:white;">Less friction. Better margins. Happier clients.</h2>
-      <p style="color:rgba(255,255,255,0.65);">FloTize replaces the spreadsheets, shared inboxes, and ad-hoc trackers that slow your firm down — with one system designed to cut admin and help you price work from your own data.</p>
+      <span class="section-label" style="color:var(--teal-light);">Why businesses choose FloTize</span>
+      <h2 style="color:white;">Less friction. Clearer priorities. A business that keeps improving.</h2>
+      <p style="color:rgba(255,255,255,0.65);">FloTize replaces the spreadsheets, shared inboxes and ad-hoc trackers that slow small businesses down — with one system that gives you real transparency into how the business is running.</p>
     </div>
     <div class="grid-4" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
       <div class="reveal" style="text-align:center;padding:1.5rem;">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem;">⚡</div>
-        <h4 style="color:white;">Faster response times</h4>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Priority clients get faster responses. AI drafts, SLA alerts, and automatic intake mean nothing waits in an inbox.</p>
-      </div>
-      <div class="reveal" style="text-align:center;padding:1.5rem;">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem;">💰</div>
-        <h4 style="color:white;">Higher margins</h4>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Clearer visibility of effort and cost per client means you stop undercharging for complex work and start pricing from data.</p>
-      </div>
-      <div class="reveal" style="text-align:center;padding:1.5rem;">
         <div style="font-size:2.5rem;margin-bottom:0.75rem;">🎯</div>
-        <h4 style="color:white;">More accurate quotes</h4>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Quotes grounded in your own historical data — not gut feel. The more you use FloTize, the better your estimates become.</p>
+        <h4 style="color:white;">Clear priorities</h4>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Know what to do next. Deadlines, client tiers and workload tell you where attention is needed today.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🔍</div>
+        <h4 style="color:white;">Real transparency</h4>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">Everything in one place: who owns what, where it stands, and whether it's at risk — without chasing people for updates.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">💡</div>
+        <h4 style="color:white;">Better decisions</h4>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">See effort and cost per client and work type, so you price from data and focus on the work worth doing.</p>
       </div>
       <div class="reveal" style="text-align:center;padding:1.5rem;">
         <div style="font-size:2.5rem;margin-bottom:0.75rem;">🗂️</div>
-        <h4 style="color:white;">Less operational friction</h4>
-        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">One system replaces multiple spreadsheets, shared inboxes, and sticky-note workflows — without a lengthy implementation.</p>
+        <h4 style="color:white;">Less friction</h4>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.6);">One system replaces multiple spreadsheets, shared inboxes and sticky-note workflows — without a lengthy implementation.</p>
       </div>
     </div>
   </div>
@@ -469,34 +434,39 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">Who it's for</span>
-      <h2>Designed for firms that run on client relationships and email</h2>
-      <p>FloTize fits businesses with recurring, repeatable work that need better visibility into workload, SLAs, and client profitability — without a rigid, one-size-fits-all tool.</p>
+      <h2>Designed for businesses whose work arrives by email</h2>
+      <p>FloTize suits small and medium businesses with repeatable, client-driven work that want better visibility of workload, deadlines and profitability — without a rigid, one-size-fits-all tool. It works with Microsoft 365 and Outlook today.</p>
     </div>
     <div class="grid-4" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
       <div class="reveal" style="text-align:center;padding:1.5rem;">
         <div style="font-size:2.5rem;margin-bottom:0.75rem;">📋</div>
         <h4>Accountancy &amp; Bookkeeping</h4>
-        <p style="font-size:0.875rem;">Manage recurring compliance work, client deadlines, and team capacity in one place — from tax season to month-end.</p>
+        <p style="font-size:0.875rem;">Manage recurring compliance work, client deadlines and team capacity in one place — from tax season to month-end.</p>
       </div>
       <div class="reveal" style="text-align:center;padding:1.5rem;">
         <div style="font-size:2.5rem;margin-bottom:0.75rem;">⚖️</div>
-        <h4>Law Firms</h4>
-        <p style="font-size:0.875rem;">Track every matter from first enquiry through to completion. Full audit trail, SLA monitoring, and client communication in one record.</p>
+        <h4>Legal Practices</h4>
+        <p style="font-size:0.875rem;">Track every matter from first enquiry through to completion, with an audit trail, deadline monitoring and client communication in one record.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏢</div>
+        <h4>Consultancies &amp; Agencies</h4>
+        <p style="font-size:0.875rem;">Replace spreadsheets and ad-hoc trackers with a single system that shows workload, profitability and delivery against deadlines.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:1.5rem;">
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏠</div>
+        <h4>Property &amp; Real Estate</h4>
+        <p style="font-size:0.875rem;">Every viewing request, offer and management query tracked automatically — with full visibility across your portfolio.</p>
       </div>
       <div class="reveal" style="text-align:center;padding:1.5rem;">
         <div style="font-size:2.5rem;margin-bottom:0.75rem;">💼</div>
         <h4>Financial Advisory</h4>
-        <p style="font-size:0.875rem;">Capture client requests, track reviews and reports, and see exactly what each client relationship costs and generates.</p>
+        <p style="font-size:0.875rem;">Capture client requests, track reviews and reports, and see what each client relationship costs and generates.</p>
       </div>
       <div class="reveal" style="text-align:center;padding:1.5rem;">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏠</div>
-        <h4>Real Estate &amp; Property</h4>
-        <p style="font-size:0.875rem;">Every viewing request, offer, and management query tracked automatically — with full visibility across your portfolio.</p>
-      </div>
-      <div class="reveal" style="text-align:center;padding:1.5rem;">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🏢</div>
-        <h4>Consultancies</h4>
-        <p style="font-size:0.875rem;">Replace spreadsheets and ad-hoc trackers with a single system that shows workload, profitability, and delivery against SLAs.</p>
+        <div style="font-size:2.5rem;margin-bottom:0.75rem;">🛠️</div>
+        <h4>Trades &amp; Field Services</h4>
+        <p style="font-size:0.875rem;">Turn enquiries and quote requests from your inbox into jobs, follow up quotes on time and see which work is worth taking on.</p>
       </div>
     </div>
   </div>
@@ -507,23 +477,23 @@
     <div class="section-header reveal">
       <span class="section-label">Productivity</span>
       <h2>Your team's time is your most valuable asset</h2>
-      <p>Professional service firms lose hours every week to intake admin, chasing responses, and updating trackers. FloTize automates the routine so your team can focus on billable work.</p>
+      <p>Small teams lose hours every week to intake admin, chasing responses and updating trackers. FloTize automates the routine so your people can focus on the work that matters.</p>
     </div>
     <div class="grid-3">
       <div class="card reveal">
         <div class="card-icon">⚡</div>
         <h3>Less time on intake</h3>
-        <p>Emails are automatically read, classified, and turned into tracked requests. No manual data entry. No copy-pasting between inbox and spreadsheet — your team stops re-typing enquiries into a tracker.</p>
+        <p>Emails are automatically read, classified and turned into tracked requests. No manual data entry and no copy-pasting between your inbox and a spreadsheet.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">🔄</div>
         <h3>Recurring work runs itself</h3>
-        <p>Monthly bookkeeping, quarterly compliance checks, annual reviews — auto-generated on the schedule you set. Your team sees the work appear in their queue without anyone having to remember to create it.</p>
+        <p>Monthly reports, quarterly checks, annual reviews — generated on the schedule you set. Your team sees the work appear in their queue without anyone having to remember to create it.</p>
       </div>
       <div class="card reveal">
         <div class="card-icon">✨</div>
         <h3>Respond faster with AI</h3>
-        <p>AI drafts client responses in seconds using your own knowledge base and past replies. Your team edits and sends — instead of writing from scratch. Replies go out faster and more consistently.</p>
+        <p>AI drafts client responses in seconds using your own knowledge base and past replies. Your team edits and sends — instead of writing from scratch.</p>
       </div>
     </div>
   </div>
@@ -531,13 +501,13 @@
 
 <section class="cta-band">
   <div class="container">
-    <h2>See how FloTize maps to your firm</h2>
-    <p>Book a free 30-minute demo. We'll walk through your current intake process, workflow, and reporting — and show you exactly where FloTize reduces delays and improves profitability.</p>
+    <h2>See how FloTize fits your business</h2>
+    <p>Book a free 30-minute demo, or start a 14-day free trial. Starter is $35 per user per month with every feature included — larger teams can talk to us about a custom plan.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:0.5rem;">
       <a href="pages/demo.html" class="btn btn-outline btn-lg">Book your free demo →</a>
       <a href="pages/demo.html" class="btn btn-lg" style="background:white;color:var(--teal);font-weight:700;">Start free trial</a>
     </div>
-    <p style="font-size:0.82rem;color:rgba(255,255,255,0.6);margin-top:1.5rem;margin-bottom:0;">No credit card required · One-day implementation · Cancel anytime</p>
+    <p style="font-size:0.82rem;color:rgba(255,255,255,0.6);margin-top:1.5rem;margin-bottom:0;">No credit card required · 14-day free trial · Cancel anytime</p>
   </div>
 </section>
 
@@ -545,9 +515,9 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/fd-mark.png" alt="FloTize" />
+        <img src="images/fd-mark.png" alt="FloTize" width="32" height="32" />
         <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
-        <p>A work operating system for professional service firms. Capture. Prioritize. Improve.</p>
+        <p>Work management and productivity software for small and medium businesses. Capture. Prioritize. Improve.</p>
       </div>
       <div class="footer-col">
         <h4>Product</h4>
@@ -576,4 +546,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-<!-- updated -->
