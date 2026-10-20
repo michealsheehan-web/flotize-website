@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How FloTize Uses AI — FloTize</title>
+  <meta name="description" content="What FloTize’s AI does and does not do, what data it receives, where it runs, how Microsoft handles it, and its limits. Updated October 2026." />
+  <link rel="canonical" href="https://www.flotize.com/pages/ai.html" />
+  <meta name="theme-color" content="#0C1117" />
+  <meta property="og:site_name" content="FloTize" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How FloTize Uses AI — FloTize" />
+  <meta property="og:description" content="What FloTize’s AI does and does not do, what data it receives, where it runs, how Microsoft handles it, and its limits. Updated October 2026." />
+  <meta property="og:url" content="https://www.flotize.com/pages/ai.html" />
+  <meta property="og:image" content="https://www.flotize.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How FloTize Uses AI — FloTize" />
+  <meta name="twitter:description" content="What FloTize’s AI does and does not do, what data it receives, where it runs, how Microsoft handles it, and its limits. Updated October 2026." />
+  <meta name="twitter:image" content="https://www.flotize.com/images/og-image.png" />
+  <link rel="icon" type="image/png" href="/images/fd-mark.png" />
+  <link rel="apple-touch-icon" href="/images/fd-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .legal-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+    .legal-content h2 { font-size: 1.3rem; margin: 2rem 0 0.75rem; }
+    .legal-content p, .legal-content li { font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .legal-content ul { padding-left: 1.5rem; }
+
+    .legal-content table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.875rem; }
+    .legal-content th, .legal-content td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--grey-3); vertical-align: top; color: var(--grey-1); }
+    .legal-content th { background: var(--grey-4); font-weight: 600; }
+    .table-wrap { overflow-x: auto; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" width="32" height="32" />
+        <span>FloTize</span>
+      </a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="demo.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);">Book a Demo</a>
+        <a href="demo.html" class="btn btn-primary">Start Free Trial</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="legal-content">
+    <h1>How FloTize uses AI</h1>
+    <p style="color:var(--grey-2);margin-bottom:2rem;">Last updated: October 2026</p>
+
+    <p>FloTize uses AI to take routine work off your team. The AI suggests and drafts; your people review and decide. This page explains what the AI does, what it receives, where it runs and what its limits are.</p>
+
+    <h2>1. What the AI does</h2>
+    <ul>
+      <li><strong>Reads incoming email.</strong> It suggests whether an email is a client request, and proposes a category, job type and contact details with a confidence score. Anything it is unsure about is flagged for a one-click check.</li>
+      <li><strong>Drafts replies.</strong> It writes suggested replies using your own knowledge base and past responses. Nothing is sent until a person approves it.</li>
+      <li><strong>Summarises your data.</strong> AI Insights describes patterns in your own request data, such as time, cost and workload, and points out what may need attention.</li>
+    </ul>
+
+    <h2>2. What the AI does not do</h2>
+    <ul>
+      <li>It does not send emails to your clients on its own.</li>
+      <li>It does not override what an email says. Learned hints about a sender only advise.</li>
+      <li>It does not assign requests. Assignment follows rules you set: category, job type, who is eligible, and current workload.</li>
+      <li>FloTize is not designed for decisions about hiring, firing, promotion or discipline, and should not be used for them.</li>
+    </ul>
+
+    <h2>3. What data the AI receives</h2>
+    <ul>
+      <li><strong>For classification:</strong> the email subject, the first part of the message body (up to 1,000 characters), your own list of categories and, where useful, hints and similar past examples from your own account.</li>
+      <li><strong>For drafting:</strong> the details of the request, relevant entries from your knowledge base and your past replies.</li>
+      <li><strong>For insights:</strong> relevant information from your own account.</li>
+    </ul>
+    <p>Data from one customer account is never sent as context for another.</p>
+
+    <h2>4. Where it runs and how it is handled</h2>
+    <p>FloTize uses the Azure OpenAI Service from Microsoft, in a standard deployment in Sweden Central. Under Microsoft's terms, prompts and responses are processed within the geography you specify and may move between regions within it, are not available to other customers or to OpenAI, and are not used to train the underlying models. FloTize does not use your data to train any model.</p>
+    <p>Microsoft applies abuse monitoring to the service. Content that is flagged as a potential misuse of the service may be sampled, stored in the same region and reviewed by authorised Microsoft personnel, who are located in the European Economic Area for models sold there. Read Microsoft's own description in <a href="https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy">Data, privacy and security for Azure OpenAI Service</a>. The provider is listed on our <a href="subprocessors.html">sub-processors</a> page.</p>
+
+    <h2>5. Learning from your corrections</h2>
+    <p>When you confirm or change a category, FloTize remembers it for that sender, as a hint for your own account only. You can see, delete or switch off everything it has learned in Settings.</p>
+
+    <h2>6. Accuracy, and your responsibilities</h2>
+    <ul>
+      <li>AI can be wrong. Check confidence scores, and review every draft before it is sent, especially quotes and anything legal, tax or financial.</li>
+      <li>You are responsible for how AI-generated content is used and for telling your own staff and clients about AI use where the law requires.</li>
+      <li>Make sure your team understands what the AI does and where it can go wrong; we are happy to help with a short briefing.</li>
+    </ul>
+
+    <h2>7. Staff and workload data</h2>
+    <p>FloTize shows workload and capacity so that work can be shared fairly and nobody is overloaded. It is not designed to rank or judge individual employees, and its AI features are not intended to evaluate people. Where the law requires, involve your staff or their representatives when you introduce workload reporting.</p>
+
+    <h2>8. Regulation</h2>
+    <p>We follow the introduction of the EU AI Act, including its rules on AI literacy and transparency, and review FloTize's features against it. We will update this page when our features or the rules change.</p>
+
+    <h2>9. Questions</h2>
+    <p>Contact us at info@flotize.com. See also our <a href="privacy.html">Privacy Policy</a> and <a href="subprocessors.html">sub-processors</a>.</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../images/fd-mark.png" alt="FloTize" width="32" height="32" />
+        <div style="font-size:1.1rem;font-weight:800;color:white;letter-spacing:-0.02em;">FloTize</div>
+        <p>Work management and productivity software for small and medium businesses. Capture. Prioritize. Improve.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="demo.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="ai.html">How we use AI</a>
+        <a href="subprocessors.html">Sub-processors</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FloTize. All rights reserved.</span>
+      <span>info@flotize.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
