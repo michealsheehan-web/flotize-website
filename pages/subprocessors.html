@@ -83,7 +83,9 @@
         <tr><td>Microsoft Azure Blob Storage</td><td>Stores company logos you upload</td><td>Logo images</td><td>West Europe (Netherlands)</td></tr>
         <tr><td>Microsoft Azure OpenAI Service</td><td>AI classification, extraction, drafting and insights</td><td>Email subject and opening text, and related context from your account</td><td>Sweden Central</td></tr>
         <tr><td>Microsoft Azure Application Insights</td><td>Service logs and error diagnostics</td><td>Technical logs, which may include user email addresses</td><td>West Europe (Netherlands)</td></tr>
-        <tr><td>Microsoft Azure Static Web Apps</td><td>Serves the web application's files</td><td>None; no customer data is stored</td><td>Global edge network</td></tr>
+        <tr><td>Microsoft Azure App Service</td><td>Hosts the FloTize web application's files</td><td>None; the application's data requests go directly to the API above</td><td>West Europe (Netherlands)</td></tr>
+        <tr><td>Microsoft Azure Front Door</td><td>Delivers the web application to your browser</td><td>Technical request data only, such as IP addresses; no customer content, and nothing is cached or logged by FloTize</td><td>Global edge network</td></tr>
+        <tr><td>Microsoft Azure Static Web Apps</td><td>Hosts the flotize.com marketing website</td><td>None; website contact-form messages go to our API</td><td>Global edge network</td></tr>
       </tbody>
     </table>
     </div>
