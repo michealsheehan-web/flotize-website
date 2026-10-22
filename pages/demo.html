@@ -83,8 +83,8 @@
         <a href="contact.html">Contact</a>
       </div>
       <div class="nav-cta">
-        <a href="demo.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);">Book a Demo</a>
-        <a href="demo.html" class="btn btn-primary">Start Free Trial</a>
+        <a href="demo.html?type=demo" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);">Book a Demo</a>
+        <a href="demo.html?type=trial" class="btn btn-primary">Start Free Trial</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
@@ -150,6 +150,13 @@
 
           <form id="demo-form">
             <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true"><label for="website">Leave this field empty</label><input type="text" id="website" tabindex="-1" autocomplete="off" /></div>
+            <div class="form-group">
+              <label for="request-kind">I'd like to *</label>
+              <select id="request-kind" required>
+                <option value="trial">Start a free 14-day trial</option>
+                <option value="demo">Book a 30-minute demo</option>
+              </select>
+            </div>
             <div class="form-group">
               <label for="name">Full name *</label>
               <input type="text" id="name" placeholder="e.g. Sarah Mitchell" required />
@@ -252,7 +259,7 @@
         <h4>Product</h4>
         <a href="features.html">Features</a>
         <a href="pricing.html">Pricing</a>
-        <a href="demo.html">Start a Free Trial</a>
+        <a href="demo.html?type=trial">Start a Free Trial</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>

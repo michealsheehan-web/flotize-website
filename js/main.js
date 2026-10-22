@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Demo form handler
   const form = document.getElementById('demo-form')
   if (form) {
+    // Links such as demo.html?type=demo or ?type=trial preselect what the visitor asked for
+    const kindSelect = form.querySelector('#request-kind')
+    const wanted = new URLSearchParams(window.location.search).get('type')
+    if (kindSelect && (wanted === 'trial' || wanted === 'demo')) kindSelect.value = wanted
     form.addEventListener('submit', async e => {
       e.preventDefault()
       const btn = form.querySelector('button[type="submit"]')
@@ -38,9 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return
       }
 
-      // Detect page type: trial vs demo/contact
-      const isTrial = window.location.pathname.includes('demo.html')
-      const requestType = isTrial ? 'Trial Request' : (form.querySelector('#subject') ? 'Contact' : 'Demo Request')
+      // Detect request type: on the trial/demo page the visitor chooses; the contact page is a plain contact form
+      const onDemoPage = window.location.pathname.includes('demo.html')
+      const isTrial = onDemoPage && val('request-kind') !== 'demo'
+      const requestType = onDemoPage ? (isTrial ? 'Trial Request' : 'Demo Request') : (form.querySelector('#subject') ? 'Contact' : 'Demo Request')
       const fields = {
         type: requestType, name, email, company, message,
         phone: val('phone'), businessType: val('business-type'), teamSize: val('team-size'), topic: val('subject'),
@@ -85,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
       form.innerHTML = `
         <div style="text-align:center;padding:3rem 1rem;">
           <div style="font-size:3rem;margin-bottom:1rem;">${sent ? '✅' : '✉️'}</div>
-          <h3 style="margin-bottom:0.5rem;color:#0C1117">${sent ? (isTrial ? 'Trial request sent!' : 'Message sent!') : 'One more step'}</h3>
+          <h3 style="margin-bottom:0.5rem;color:#0C1117">${sent ? (isTrial ? 'Trial request sent!' : (requestType === 'Demo Request' ? 'Demo request sent!' : 'Message sent!')) : 'One more step'}</h3>
           <p style="color:#6B7280">Thanks ${safeName} — ${sent ? okText : fallbackText}</p>
         </div>
       `
